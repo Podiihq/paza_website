@@ -108,29 +108,7 @@ export const HamburgerMenu = () => {
 
 
 
-const NavBar = ({ targetSectionRef }) => {
-    const [isInSection, setIsInSection] = useState(false);
-    // const targetSectionRef = useRef(null)
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsInSection(entry.isIntersecting);
-            },
-            { threshold: 0.1 }
-        );
-
-        if (targetSectionRef.current) {
-            observer.observe(targetSectionRef.current);
-        }
-
-        return () => {
-            if (targetSectionRef.current) {
-                observer.unobserve(targetSectionRef.current);
-            }
-        };
-
-    }, []);
+const NavBar = () => {
     return (
         <div>
             <div className='flex justify-between px-4 lg:px-0 items-center fixed z-50 w-full bg-[#000000] lg:hidden'>
@@ -139,8 +117,8 @@ const NavBar = ({ targetSectionRef }) => {
                 </Link>
                 <HamburgerMenu />
             </div>
-            <nav className='hidden lg:block  w-screen py-2 fixed z-50'>
-                <div className='flex justify-between items-center mx-auto max-w-screen-2xl'>
+            <nav className='hidden lg:block w-screen py-2 fixed z-50'>
+                <div className='flex justify-between items-center mx-auto max-w-screen-2xl px-4'>
                     <Link to="/">
                         <p className='text-[50px] leading-10'>PAZA STUDIO</p>
                     </Link>
@@ -153,8 +131,7 @@ const NavBar = ({ targetSectionRef }) => {
                             <FlipLink flipClass="text-4xl">Our&nbsp;PROCESS</FlipLink>
                         </div>
                         <Link to="/">
-                            <div className={`pl-5 pr-1.5 py-1.5 text-[40px] leading-10 duration-300 text-black bg-[#9EFF50] flex items-center gap-2
-                                            ${isInSection ? " hover:text-[#9EFF50] hover:bg-[#000000] border hover:border-[#9EFF50]" : " hover:text-[#000000] border hover:border-[#000000]"}`}>
+                            <div className="pl-5 pr-1.5 py-1.5 text-[40px] leading-10 duration-300 text-black bg-[#9EFF50] flex items-center gap-2">
                                 <FlipLink>GET&nbsp;QUOTATION</FlipLink>
                                 <div className="text-[#9EFF50] bg-black p-3 text-lg">
                                     <FaArrowRight />
@@ -163,7 +140,6 @@ const NavBar = ({ targetSectionRef }) => {
                         </Link>
                     </div>
                 </div>
-
                 <div className='absolute w-full h-50 bg-linear-to-b via-[#000000]/70 from-[#000000] to-transparent top-0 -z-10' />
             </nav>
         </div>
