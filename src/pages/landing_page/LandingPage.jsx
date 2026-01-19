@@ -3,6 +3,7 @@ import NavBar from "../../components/NavBar";
 import LocomotiveScroll from 'locomotive-scroll';
 import HeroVideo from "../../assets/videos/hero_reel.mp4";
 import ArtistCardCarousel from "../../components/ArtistCard";
+import CompanyCardCarousel from "../../components/CompanyCard";
 
 
 const LandingPage = () => {
@@ -35,11 +36,18 @@ const LandingPage = () => {
                 {/* <img src={HeroImage} alt="" className='w-full object-cover h-full' /> */}
                 <div className='absolute w-screen h-200 bg-linear-to-t via-[#000000]/70 from-[#000000] to-transparent bottom-0 z-10' />
             </section>
-            <section>
+            <section className="">
                 <div>
                     <p className="text-[#939393] text-center helvetica-regular">Amazing artists we’ve worked with</p>
                     <div className="mt-10">
                         <ArtistCardCarousel />
+                    </div>
+                </div>
+
+                <div className="pt-32 lg:max-w-screen-2xl mx-auto">
+                    <p className="text-[#939393] text-center helvetica-regular">Companies and Brands</p>
+                    <div>
+                        <CompanyCardCarousel />
                     </div>
                 </div>
             </section>
