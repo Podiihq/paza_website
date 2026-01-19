@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/Coolvetica/CoolveticaCompressedHv-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica-Regular';
+  src: url('./assets/fonts/Coolvetica/CoolveticaCondensedRg-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica-Regular';
+  src: url('./assets/fonts/HelveticaNowDisplay/HelveticaNowDisplay-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Coolvetica';
+  text-transform: uppercase;
+}
+
+.coolvetica-regular {
+  font-family: Coolvetica-Regular;
+}
+
+.helvetica-regular {
+  font-family: Helvetica-Regular;
+}
