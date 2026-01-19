@@ -24,11 +24,11 @@
 
 * {
   font-family: 'Coolvetica';
-  text-transform: uppercase;
 }
 
 .coolvetica-regular {
   font-family: Coolvetica-Regular;
+  text-transform: uppercase;
 }
 
 .helvetica-regular {

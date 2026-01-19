@@ -122,7 +122,7 @@ const NavBar = () => {
                     <Link to="/">
                         <p className='text-[50px] leading-10'>PAZA STUDIO</p>
                     </Link>
-                    <div className='lg:flex items-center gap-6'>
+                    <div className='lg:flex items-center gap-6 uppercase'>
                         <div className='flex gap-6'>
                             <FlipLink flipClass="text-4xl">HOME</FlipLink>
                             <FlipLink flipClass="text-4xl">SERVICES</FlipLink>

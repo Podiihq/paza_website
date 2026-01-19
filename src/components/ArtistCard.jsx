@@ -22,28 +22,33 @@ import Wadagliz from "../assets/images/artist/Wadagliz.jpg"
 
 const ArtistCardCarousel = () => {
     return (
-        <Marquee>
-            <ArtistCard name="Boutross" image={Boutross} />
-            <ArtistCard name="Femi 1" image={Femi} />
-            <ArtistCard name="Toxic Lylikali" image={Toxic} />
-            <ArtistCard name="Costa Ojwang" image={Costa} />
-            <ArtistCard name="Ssaru" image={Ssaru} />
-            <ArtistCard name="Breeder LW" image={Breeder} />
-            <ArtistCard name="Fathermore" image={Father} />
-            <ArtistCard name="Maandy" image={Maandy} />
-            <ArtistCard name="Mejja" image={Mejja} />
-            <ArtistCard name="Tanasha Donna" image={Tanasha} />
-            <ArtistCard name="Jadi" image={Jadi} />
-            <ArtistCard name="King Kaka" image={King} />
-            <ArtistCard name="Nyasanje" image={Nyasanje} />
-            <ArtistCard name="Sauti Soul" image={Soul} />
-            <ArtistCard name="Serro" image={Serro} />
-            <ArtistCard name="Lil Maina" image={Maina} />
-            <ArtistCard name="Ochunglo" image={Ochunglo} />
-            <ArtistCard name="Tipsy Gee" image={Typsy} />
-            <ArtistCard name="Vic West" image={Vic} />
-            <ArtistCard name="Wadangliz" image={Wadagliz} />
-        </Marquee>
+        <div className="relative">
+            <div className='hidden lg:block absolute w-75 h-150 bg-linear-to-r via-[#000000]/70 from-[#000000] to-transparent left-0 z-20' />
+            <div className='hidden lg:block absolute w-75 h-150 bg-linear-to-l via-[#000000]/70 from-[#000000] to-transparent right-0 z-20' />
+            <Marquee direction="right">
+                <ArtistCard name="Boutross" image={Boutross} />
+                <ArtistCard name="Femi 1" image={Femi} />
+                <ArtistCard name="Toxic Lylikali" image={Toxic} />
+                <ArtistCard name="Costa Ojwang" image={Costa} />
+                <ArtistCard name="Ssaru" image={Ssaru} />
+                <ArtistCard name="Breeder LW" image={Breeder} />
+                <ArtistCard name="Fathermore" image={Father} />
+                <ArtistCard name="Maandy" image={Maandy} />
+                <ArtistCard name="Mejja" image={Mejja} />
+                <ArtistCard name="Tanasha Donna" image={Tanasha} />
+                <ArtistCard name="Jadi" image={Jadi} />
+                <ArtistCard name="King Kaka" image={King} />
+                <ArtistCard name="Nyasanje" image={Nyasanje} />
+                <ArtistCard name="Sauti Soul" image={Soul} />
+                <ArtistCard name="Serro" image={Serro} />
+                <ArtistCard name="Lil Maina" image={Maina} />
+                <ArtistCard name="Ochunglo" image={Ochunglo} />
+                <ArtistCard name="Tipsy Gee" image={Typsy} />
+                <ArtistCard name="Vic West" image={Vic} />
+                <ArtistCard name="Wadangliz" image={Wadagliz} />
+            </Marquee>
+        </div>
+
     )
 }
 
@@ -55,7 +60,7 @@ export const ArtistCard = ({ name, image }) => {
     return (
         <div className="relative h-80 w-50 lg:h-130 lg:w-100 mr-4">
             <img src={image} alt="" className="h-full w-full object-cover relative" />
-            <div className='absolute w-screen h-30 bg-linear-to-t from-[#000000] via-[#000000]/90 to-transparent bottom-0 z-20' />
+            <div className='absolute w-full h-50 bg-linear-to-t from-[#000000] via-[#000000]/80 to-transparent bottom-0 z-20' />
             <div className="absolute bottom-1 left-2 lg:left-6 z-30">
                 <div className="">
                     <p className="text-4xl lg:text-7xl">{name}</p>
