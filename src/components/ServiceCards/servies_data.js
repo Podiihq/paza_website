@@ -1,4 +1,8 @@
 import Image1 from "../../assets/images/backs/02.png"
+import Image2 from "../../assets/images/backs/03.png"
+import Image3 from "../../assets/images/backs/04.png"
+import Image4 from "../../assets/images/backs/05.png"
+import Image5 from "../../assets/images/backs/01.png"
 
 
 export const services = [
@@ -20,7 +24,7 @@ export const services = [
             "Multi - Camera Production",
             "Drone Videography"
         ],
-        src: Image1,
+        src: Image2,
     },
     {
         id: 3,
@@ -30,17 +34,17 @@ export const services = [
             "Style Adaptation",
             "Stem Delivery for all formats"
         ],
-        src: Image1,
+        src: Image3,
     },
     {
         id: 4,
-        title: "For Musicians & Artists",
+        title: "Musicians & Artists",
         services: [
             "Track Production & Beat Making",
             "Mixing & Mastering",
             "Vocal Production"
         ],
-        src: Image1,
+        src: Image4,
     },
     {
         id: 5,
@@ -50,6 +54,6 @@ export const services = [
             "Scoring to Picture",
             "Video Production and Color Grading for Creators",
         ],
-        src: Image1,
+        src: Image5,
     },
 ]

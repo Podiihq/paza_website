@@ -34,3 +34,20 @@
 .helvetica-regular {
   font-family: Helvetica-Regular;
 }
+
+
+.image-row {
+  -webkit-mask-image: url('./assets/shapes/curved.svg');
+  mask-image: url('./assets/shapes/curved.svg');
+  mask-size: cover;
+  width: 100%;
+  -webkit-mask-size: cover;
+}
+
+.image-row-mobile {
+  -webkit-mask-image: url('./assets/shapes/curvedMobile.svg');
+  mask-image: url('./assets/shapes/curvedMobile.svg');
+  mask-size: cover;
+  width: 100%;
+  -webkit-mask-size: cover;
+}

@@ -81,7 +81,7 @@ export const HamburgerMenu = () => {
                                             <Link
                                                 to={item.link}
                                                 onClick={() => setIsOpen(false)}
-                                                className="block text-[#9EFF50] text-[6rem] leading-20 text-center" >
+                                                className="block text-[#9EFF50] text-[6rem] leading-20 text-center uppercase" >
                                                 {item.text}
                                             </Link>
                                         </motion.li>
