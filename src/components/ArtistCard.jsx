@@ -63,7 +63,7 @@ export const ArtistCard = ({ name, image }) => {
             <div className='absolute w-full h-50 bg-linear-to-t from-[#000000] via-[#000000]/80 to-transparent bottom-0 z-20' />
             <div className="absolute bottom-1 left-2 lg:left-6 z-30">
                 <div className="">
-                    <p className="text-4xl lg:text-7xl uppercase">{name}</p>
+                    <p className="text-4xl lg:text-7xl uppercase text-[#9EFF50]">{name}</p>
                     <p className="helvetica-regular normal-case">Artist</p>
                 </div>
             </div>

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router';
 import { FlipLink } from './LinkFlip';
 import { FaArrowRight } from 'react-icons/fa';
+import { BiRightArrowAlt } from 'react-icons/bi';
 
 export const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -130,14 +131,16 @@ const NavBar = () => {
                             <FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink>
                             <FlipLink flipClass="text-4xl">Our&nbsp;PROCESS</FlipLink>
                         </div>
-                        <Link to="/">
-                            <div className="pl-5 pr-1.5 py-1.5 text-[40px] leading-10 duration-300 text-black bg-[#9EFF50] flex items-center gap-2">
-                                <FlipLink>GET&nbsp;QUOTATION</FlipLink>
-                                <div className="text-[#9EFF50] bg-black p-3 text-lg">
-                                    <FaArrowRight />
+                        <div>
+                            <Link to="/" className="group">
+                                <div className=" uppercase pl-5 pr-3 py-1.5 text-[40px] leading-10 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
+                                    <FlipLink>GET&nbsp;Quotation</FlipLink>
+                                    <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 text-lg">
+                                        <BiRightArrowAlt className="group-hover:-rotate-45 duration-200 " />
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className='absolute w-full h-50 bg-linear-to-b via-[#000000]/70 from-[#000000] to-transparent top-0 -z-10' />

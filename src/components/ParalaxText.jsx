@@ -34,7 +34,7 @@ const ParallaxText = ({ children, baseVelocity = 100, textClass }) => {
 
     return (
         <div className="overflow-hidden flex flex-nowrap whitespace-nowrap">
-            <motion.div className={`text-[20rem] leading-56 lg:text-[40rem] lg:leading-100 text-[#D8FF01] ${textClass}`} style={{ x }}>
+            <motion.div className={`text-[20rem] leading-60 lg:text-[40rem] lg:leading-100 text-[#1a1a1a] uppercase ${textClass}`} style={{ x }}>
                 <span>{children}</span>
             </motion.div>
         </div>
@@ -51,10 +51,10 @@ export const ParalaxTextComponent = () => {
 
     return (
         <section className='text-white w-full'>
-            <ParallaxText baseVelocity={-2}>Health social Financial Legal support Health social Financial Legal support</ParallaxText>
-            <ParallaxText baseVelocity={2}>support Legal  Health social  Financial support Legal  Health social  Financial</ParallaxText>
-            <ParallaxText baseVelocity={-2}>Health social Financial Legal support Health social Financial Legal support</ParallaxText>
-            <ParallaxText baseVelocity={2}>support Legal  Health social  Financial support Legal  Health social  Financial</ParallaxText>
+            <ParallaxText baseVelocity={-2}>PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO</ParallaxText>
+            <ParallaxText baseVelocity={2}>PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO</ParallaxText>
+            <ParallaxText baseVelocity={-2}>PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO</ParallaxText>
+            <ParallaxText baseVelocity={2}>PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO PAZA STUDIO</ParallaxText>
         </section>
     )
 }
