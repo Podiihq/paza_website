@@ -1,16 +1,9 @@
 import { Link } from "react-router-dom"
 import { BiRightArrowAlt } from "react-icons/bi"
-
-import Image1 from "../assets/images/shows/mama_duka.jpg"
-import Image2 from "../assets/images/shows/Limo on the run.png"
-import Image3 from "../assets/images/shows/Reckless.jpeg"
-import Image4 from "../assets/images/shows/Salem.jpg"
-import Image5 from "../assets/images/shows/tuki.jpg"
-import Image6 from "../assets/images/shows/auntie-boss.jpg"
 import { LuArrowBigRight } from "react-icons/lu"
-
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { workData } from "../assets/data/WorkData"
 
 
 const WorkComponent = () => {
@@ -85,12 +78,8 @@ export const WorkCard = ({ poster, title, link_to, work, platform }) => {
                                 <p className="py-2 lg:py-0 uppercase tracking-wide text-3xl leading-6 text-[#939393] group-hover:text-white lg:mb-2">
                                     {platform}
                                 </p>
-
                                 {work.map((item, index) => (
-                                    <p
-                                        key={index}
-                                        className="helvetica-regular py-0.5 uppercase text-[#939393] flex group-hover:text-white leading-none text-xs"
-                                    >
+                                    <p key={index} className="helvetica-regular py-0.5 uppercase text-[#939393] flex group-hover:text-white leading-none text-xs">
                                         <LuArrowBigRight />
                                         {item}
                                     </p>
@@ -107,67 +96,3 @@ export const WorkCard = ({ poster, title, link_to, work, platform }) => {
         </>
     )
 }
-
-
-export const workData = [
-    {
-        poster: Image6,
-        title: "Aunty Boss",
-        link_to: "/",
-        work: [
-            "Compositing",
-            "Color Grading"
-        ],
-        platform: "MMP and Showmax"
-    },
-    {
-        poster: Image4,
-        title: "Salem",
-        link_to: "/",
-        work: [
-            "Compositing",
-            "Color Grading"
-        ],
-        platform: "MMP and Showmax"
-    },
-    {
-        poster: Image1,
-        title: "Mama Duka",
-        link_to: "/",
-        work: [
-            "Visual Production & ",
-            "Color Grading"
-        ],
-        platform: "AMVCA Awards 2014"
-    },
-    {
-        poster: Image3,
-        title: "Reckless",
-        link_to: "/",
-        work: [
-            "Final Mix",
-            "Composition"
-        ],
-        platform: "MMP and Showmax"
-    },
-    {
-        poster: Image5,
-        title: "Tuki",
-        link_to: "/",
-        work: [
-            "Color Grading"
-        ],
-        platform: "K24, NTV, YouTube & Community Radios"
-    },
-    {
-        poster: Image2,
-        title: "Limo on the run",
-        link_to: "/",
-        work: [
-            "Compositing",
-            "Color Grading"
-        ],
-        platform: "Documentary"
-    },
-
-]

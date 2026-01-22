@@ -3,9 +3,9 @@ import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { FlipLink } from '../LinkFlip';
 import { Link } from 'react-router-dom';
-import { services } from './servies_data';
 import { BiRightArrowAlt } from 'react-icons/bi';
 import { LuArrowBigRight } from 'react-icons/lu';
+import { servicesData } from '../../assets/data/servies_data';
 
 const Card = ({ i, title, services, src, progress, range, targetScale }) => {
 
@@ -98,7 +98,7 @@ export const DisplayMobileCard = () => {
     return (
         <div>
             {
-                services.map((service, i) => {
+                servicesData.map((service, i) => {
                     return <CardMobile
                         key={`p_${i}`}
                         i={i}

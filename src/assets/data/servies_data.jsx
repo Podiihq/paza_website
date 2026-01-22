@@ -4,8 +4,7 @@ import Image3 from "../../assets/images/backs/04.png"
 import Image4 from "../../assets/images/backs/05.png"
 import Image5 from "../../assets/images/backs/01.png"
 
-
-export const services = [
+export const servicesData = [
     {
         id: 1,
         title: "Creative Agency & Campaigns",
