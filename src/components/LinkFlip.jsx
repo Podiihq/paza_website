@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-export const FlipLink = ({ children, href, flipClass }) => {
+export const FlipLink = ({ children, flipClass }) => {
     return (
-        <Link to={href}>
+        <>
             <motion.div
                 initial="initial"
                 whileHover="hovered"
@@ -62,7 +62,7 @@ export const FlipLink = ({ children, href, flipClass }) => {
                     ))}
                 </div>
             </motion.div>
-        </Link>
+        </>
 
     );
 };

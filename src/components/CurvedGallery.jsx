@@ -49,7 +49,7 @@ const CurvedGallery = () => {
                 <div className='hidden lg:block absolute w-75 h-150 bg-linear-to-l via-[#000000]/70 from-[#000000] to-transparent right-0 z-20' />
             </div >
             {/* Mobile View */}
-            <div div className="image-row-mobile flex justify-center w-full object-cover lg:hidden mt-5 relative" >
+            <div className="image-row-mobile flex justify-center w-full object-cover lg:hidden mt-5 relative" >
                 <Marquee speed={10}>
                     {
                         video_reel.slice(0, 5).map((item, index) => (

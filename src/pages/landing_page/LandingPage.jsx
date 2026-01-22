@@ -33,10 +33,10 @@ const LandingPage = () => {
                 <NavBar />
                 <div className="lg:max-w-screen-2xl mx-auto flex flex-col h-full">
                     <div className="flex-1" />
-                    <div className="relative px-4 z-20 mb-20">
+                    <div className="relative px-4 z-20 mb-10 lg:mb-20">
                         <p className="text-[100px] leading-20 lg:text-[230px] lg:leading-42.5 text-white uppercase">Bring your idea — <br className="hidden md:block" />we’ll handle the <br className="hidden md:block" />craft.</p>
                         <div className="lg:absolute lg:bottom-5 lg:right-[45%] mt-4 lg:mt-0">
-                            <p className="lg:w-100 helvetica-regular uppercase">We’re a hands-on <span className="text-[#9EFF50] helvetica-regular"> Audio-visual Production Studio </span>  that craft complete brand experiencesfrom initial concept to final delivery in any format.</p>
+                            <p className="lg:w-100 helvetica-light uppercase">We’re a hands-on <span className="text-[#9EFF50] helvetica-regular"> Audio-visual Production Studio </span>  that craft complete brand experiencesfrom initial concept to final delivery in any format.</p>
                         </div>
                     </div>
                 </div>
@@ -62,30 +62,30 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="lg:max-w-screen-2xl mx-auto relative z-10 pt-32 px-4">
-                <div className="px-4 lg:px-0 mb-6">
-                    <p className="helvetica-regular uppercase text-[#9EFF50]">Our Services</p>
-                    <p className="text-[100px] leading-25.5 lg:text-[150px] lg:leading-24 uppercase">What We Do</p>
+            <section className="lg:max-w-screen-2xl mx-auto relative z-10 pt-5 lg:pt-32 px-4">
+                <div className="mb-6">
+                    <p className="helvetica-regular uppercase">Our Services</p>
+                    <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">What We Do</p>
                 </div>
                 <ServicesCards />
                 <DisplayMobileCard />
             </section>
-            <section className="lg:max-w-screen-2xl mx-auto py-32 lg:pt-0">
-                <p className="text-[100px] leading-25.5 lg:text-[150px] lg:leading-30 uppercase text-center">Your <span className="text-[#9EFF50]">vision,</span> our tools, <br className="hidden lg:block" /> one  <span className="text-[#9EFF50]">great result.</span></p>
+            <section className="lg:max-w-screen-2xl mx-auto py-10 lg:py-32 lg:pt-0 px-4">
+                <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-30 uppercase text-center">Your <span className="text-[#9EFF50]">vision,</span> our tools, <br className="hidden lg:block" /> one  <span className="text-[#9EFF50]">great result.</span></p>
                 <CurvedGallery />
             </section>
             <section className="lg:max-w-screen-2xl mx-auto py-10 px-4 lg:px-0">
-                <div className="mb-20">
+                <div className="mb-6 lg:mb-20">
                     <p className="helvetica-regular uppercase ">Portfolio</p>
-                    <p className="text-[100px] leading-25.5 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">Our Work</p>
+                    <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">Our Work</p>
                 </div>
                 <WorkComponent />
-                <div className='flex justify-end mt-20'>
+                <div className='flex justify-end mt-10 lg:mt-20'>
                     <Link to="/" className="group">
-                        <div className=" uppercase pl-5 pr-3 py-1.5 text-[100px] w-full leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
+                        <div className=" uppercase pl-5 pr-3 py-1.5 text-[50px] leading-10 lg:text-[100px] w-full lg:leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
                             <FlipLink>ALL&nbsp;PROJECTS</FlipLink>
-                            <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 text-[50px]">
-                                <BiRightArrowAlt className="group-hover:-rotate-45 duration-200" />
+                            <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 lg:text-[50px]">
+                                <BiRightArrowAlt className="group-hover:-rotate-45 duration-200 text-2xl" />
                             </div>
                         </div>
                     </Link>
@@ -95,7 +95,7 @@ const LandingPage = () => {
                 <ParalaxTextComponent />
             </section>
             <section>
-                <div className="pt-32 lg:max-w-screen-2xl mx-auto">
+                <div className="pt-10 lg:pt-32 lg:max-w-screen-2xl mx-auto">
                     <p className="text-[#939393] text-center helvetica-regular uppercase">Worked with</p>
                     <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">50+ TOP Artists</p>
                     <div className="mt-10">
@@ -110,7 +110,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="pt-32">
+            <section className="lg:pt-32">
                 <Footer />
             </section>
 

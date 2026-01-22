@@ -19,7 +19,7 @@ import Logo17 from "../assets/logos/brands/zebra_productions.jpeg"
 
 const CompanyCardCarousel = () => {
     return (
-        <div className="relative -space-y-20">
+        <div className="relative -space-y-26 lg:-space-y-20">
             <div className='hidden lg:block absolute w-30 h-100 bg-linear-to-r via-[#000000]/70 from-[#000000] to-transparent left-0 z-10' />
             <div className='hidden lg:block absolute w-30 h-100 bg-linear-to-l via-[#000000]/70 from-[#000000] to-transparent right-0 z-10' />
             <Marquee speed={20} direction="left">

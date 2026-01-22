@@ -34,7 +34,7 @@ const ParallaxText = ({ children, baseVelocity = 100, textClass }) => {
 
     return (
         <div className="overflow-hidden flex flex-nowrap whitespace-nowrap">
-            <motion.div className={`text-[20rem] leading-60 lg:text-[40rem] lg:leading-100 text-[#1a1a1a] uppercase ${textClass}`} style={{ x }}>
+            <motion.div className={`text-[15rem] leading-40 lg:text-[40rem] lg:leading-100 text-[#1a1a1a] uppercase ${textClass}`} style={{ x }}>
                 <span>{children}</span>
             </motion.div>
         </div>

@@ -75,9 +75,9 @@ export const HamburgerMenu = () => {
                         <div className='flex flex-col items-center px-4 lg:px-10 mx-auto mt-6 h-screen pb-10 pt-32'>
                             <nav className='flex justify-center'>
                                 <ul>
-                                    {menuItems.map((item) => (
+                                    {menuItems.map((item, index) => (
                                         <motion.li
-                                            key={item.id}
+                                            key={index}
                                             whileTap={{ scale: 0.95 }}>
                                             <Link
                                                 to={item.link}
@@ -91,9 +91,6 @@ export const HamburgerMenu = () => {
                             </nav>
                             <div className='flex-1' />
                             <div className='w-full flex flex-col gap-2'>
-                                <Link className='w-full'>
-                                    <p className='px-8 py-3 uppercase text-[3rem] leading-none lg:text-[60px] lg:leading-12.5 text-[#000000] bg-[#9EFF50] text-center'>Contact Us</p>
-                                </Link>
                                 <Link className='w-full'>
                                     <p className='px-8 py-3 uppercase text-[3rem] leading-none lg:text-[60px] lg:leading-12.5 bg-[#000000] text-[#9EFF50] border border-[#9EFF50] text-center'>Get Quotation</p>
                                 </Link>
@@ -112,11 +109,14 @@ export const HamburgerMenu = () => {
 const NavBar = () => {
     return (
         <div>
-            <div className='flex justify-between px-4 lg:px-0 items-center fixed z-50 w-full bg-[#000000] lg:hidden'>
-                <Link to="/">
-                    <p className='text-[40px] leading-10 relative z-50 text-white'>PAZA STUDIO</p>
-                </Link>
-                <HamburgerMenu />
+            <div className='fixed z-50 w-full lg:hidden'>
+                <div className='px-4 lg:px-0 flex justify-between items-center w-full'>
+                    <Link to="/">
+                        <p className='text-[40px] leading-10 relative z-50 text-white'>PAZA STUDIO</p>
+                    </Link>
+                    <HamburgerMenu />
+                </div>
+                <div className='absolute w-full h-30 bg-linear-to-b via-[#000000]/70 from-[#000000] to-transparent top-0 -z-10' />
             </div>
             <nav className='hidden lg:block w-screen py-2 fixed z-50'>
                 <div className='flex justify-between items-center mx-auto max-w-screen-2xl px-4'>
@@ -124,12 +124,11 @@ const NavBar = () => {
                         <p className='text-[50px] leading-10'>PAZA STUDIO</p>
                     </Link>
                     <div className='lg:flex items-center gap-6 uppercase'>
-                        <div className='flex gap-6'>
-                            <FlipLink flipClass="text-4xl">HOME</FlipLink>
-                            <FlipLink flipClass="text-4xl">SERVICES</FlipLink>
-                            <FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink>
-                            <FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink>
-                            {/* <FlipLink flipClass="text-4xl">Our&nbsp;PROCESS</FlipLink> */}
+                        <div className='flex gap-6 tracking-wide'>
+                            <Link to="/"><FlipLink flipClass="text-4xl">HOME</FlipLink></Link>
+                            <Link to="/"><FlipLink flipClass="text-4xl">SERVICES</FlipLink></Link>
+                            <Link to="/"><FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink></Link>
+                            <Link to="/"><FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink></Link>
                         </div>
                         <div>
                             <Link to="/" className="group">

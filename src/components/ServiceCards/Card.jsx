@@ -1,8 +1,6 @@
 'use client'
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
-import { Button } from '../Button';
-import { FaArrowRight } from 'react-icons/fa';
 import { FlipLink } from '../LinkFlip';
 import { Link } from 'react-router-dom';
 import { services } from './servies_data';
@@ -31,8 +29,7 @@ const Card = ({ i, title, services, src, progress, range, targetScale }) => {
                         <div className='w-full'>
                             <h2 className='text-[40px] leading-11.25 lg:text-[170px] lg:leading-35.5 mb-4 uppercase'>{title}</h2>
                             {services?.map((item, index) => (
-                                <p key={index} className='text-lg helvetica-regular w-fit flex items-start gap-2 border-b border-[#222222]'>
-                                    {/* <FaArrowRight className='mr-2 mt-1' /> */}
+                                <p key={index} className='text-lg helvetica-light w-fit flex items-start gap-2 border-b border-[#222222]'>
                                     <LuArrowBigRight className='mt-1 text-xl' />
                                     {item}
                                 </p>
@@ -51,7 +48,7 @@ const Card = ({ i, title, services, src, progress, range, targetScale }) => {
                     </div>
 
                     <div className="h-full hidden lg:block absolute top-0 w-full">
-                        <img fill src={src} alt="image" className='w-full h-full object-cover rounded-lg' />
+                        <img src={src} alt="image" className='w-full h-full object-cover rounded-lg' />
                     </div>
                     <div className='hidden lg:block absolute w-full h-190 bg-linear-to-t via-[#000000]/90 from-[#000000] to-transparent bottom-0 z-10' />
                 </div>
@@ -66,24 +63,28 @@ export default Card
 
 
 
-export const CardMobile = ({ services, title, }) => {
+export const CardMobile = ({ services, title, src }) => {
     return (
-        <div className='mb-6'>
-            <div className='lg:hidden p-4 border mx-4 border-[#1A1A1A] h-full'>
+        <div className='mb-4'>
+            <div className='lg:hidden p-4 border lg:mx-4 border-[#1A1A1A] h-full'>
                 <div className='w-full'>
-                    <h2 className='text-[60px] leading-11.25 lg:text-[200px] lg:leading-37.5 mb-4 text-white uppercase'>{title}</h2>
+                    <img src={src} alt="" className='w-full h-24 object-cover' />
+                    <h2 className='pt-2 text-[50px] leading-11.25 tracking-wide lg:text-[200px] lg:leading-37.5 mb-4 text-white uppercase'>{title}</h2>
                     {services?.map((item, index) => (
-                        <p key={index} className='text-lg helvetica-regular w-fit flex items-start gap-2 border-b border-[#222222]'>
-                            <FaArrowRight className='mr-2 mt-1' />
+                        <p key={index} className='helvetica-light w-fit flex items-center gap-2 border-b border-[#222222] text-base py-0.5'>
+                            <LuArrowBigRight className='text-xl' />
                             {item}
                         </p>
                     ))}
                 </div>
-                <div className='flex'>
-                    <Link to="/">
-                        <div className="text-[#9EFF50] flex items-center gap-3 mt-4 underline">
-                            <p className='helvetica-regular'>More Services</p>
-                            <FaArrowRight />
+
+                <div className='flex mt-4'>
+                    <Link to="/" className="group">
+                        <div className=" uppercase pl-5 pr-3 py-2 text-[30px] w-full leading-13.5 duration-300 text-[#9EFF50] lg:bg-black border border-[#9EFF50] flex items-center gap-2">
+                            <FlipLink>Learn&nbsp;More</FlipLink>
+                            <div className="text-[#9EFF50] border border-[#9EFF50] bg-black p-1">
+                                <BiRightArrowAlt className="text-xl" />
+                            </div>
                         </div>
                     </Link>
                 </div>
