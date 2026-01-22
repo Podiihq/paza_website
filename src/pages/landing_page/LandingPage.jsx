@@ -48,37 +48,36 @@ const LandingPage = () => {
             </section>
             <section>
                 <div className="pt-32 lg:max-w-screen-2xl mx-auto">
-                    <p className="text-[#939393] text-center helvetica-regular uppercase">Amazing artists we’ve worked with</p>
+                    <p className="text-[#939393] text-center helvetica-regular uppercase">Worked with</p>
+                    <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">50+ TOP Artists</p>
                     <div className="mt-10">
                         <ArtistCardCarousel />
                     </div>
                 </div>
                 <div className="pt-32 lg:max-w-6xl mx-auto">
-                    <p className="text-[#939393] text-center helvetica-regular uppercase">Companies and Brands</p>
+                    <p className="text-[#939393] text-center helvetica-regular uppercase">TRUSTED BY</p>
+                    <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">30+ Brands & Companies</p>
                     <div>
                         <CompanyCardCarousel />
                     </div>
                 </div>
             </section>
-
             <section className="lg:max-w-screen-2xl mx-auto relative z-10 pt-32 px-4">
                 <div className="px-4 lg:px-0 mb-6">
-                    <p className="helvetica-regular uppercase">Our Services</p>
-                    <p className="text-[100px] leading-25.5 lg:text-[200px] lg:leading-37.5 uppercase">What We Do</p>
+                    <p className="helvetica-regular uppercase text-[#9EFF50]">Our Services</p>
+                    <p className="text-[100px] leading-25.5 lg:text-[150px] lg:leading-24 uppercase">What We Do</p>
                 </div>
                 <ServicesCards />
                 <DisplayMobileCard />
             </section>
-
             <section className="lg:max-w-screen-2xl mx-auto py-32 lg:pt-0">
-                <p className="px-4 lg:px-0 text-[80px] leading-16 lg:text-[170px] lg:leading-35 uppercase text-center">Your vision, our tools, <br className="hidden lg:block" /> one great result</p>
+                <p className="text-[100px] leading-25.5 lg:text-[150px] lg:leading-30 uppercase text-center">Your <span className="text-[#9EFF50]">vision,</span> our tools, <br className="hidden lg:block" /> one  <span className="text-[#9EFF50]">great result.</span></p>
                 <CurvedGallery />
             </section>
-
-            <section className="lg:max-w-screen-2xl mx-auto py-20 px-4 lg:px-0">
+            <section className="lg:max-w-screen-2xl mx-auto py-10 px-4 lg:px-0">
                 <div className="mb-20">
-                    <p className="helvetica-regular uppercase">Our Work</p>
-                    <p className="text-[100px] leading-25.5 lg:text-[200px] lg:leading-37.5 uppercase text-[#9EFF50]">Portfolio</p>
+                    <p className="helvetica-regular uppercase ">Portfolio</p>
+                    <p className="text-[100px] leading-25.5 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">Our Work</p>
                 </div>
                 <WorkComponent />
                 <div className='flex justify-end mt-20'>
@@ -92,21 +91,20 @@ const LandingPage = () => {
                     </Link>
                 </div>
             </section>
-
             <section>
                 <ParalaxTextComponent />
             </section>
-
             <section>
                 <div className="pt-32 lg:max-w-screen-2xl mx-auto">
-                    <p className="text-[#939393] text-center helvetica-regular uppercase">SUCCESS STORIES</p>
-                    <p className="px-4 lg:px-0 text-[80px] leading-16 lg:text-[130px] lg:leading-20 uppercase text-center">Artists & Talents</p>
+                    <p className="text-[#939393] text-center helvetica-regular uppercase">Worked with</p>
+                    <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">50+ TOP Artists</p>
                     <div className="mt-10">
                         <ArtistCardCarousel />
                     </div>
                 </div>
                 <div className="pt-32 lg:max-w-6xl mx-auto">
-                    <p className="px-4 lg:px-0 text-[80px] leading-16 lg:text-[130px] lg:leading-20 uppercase text-center">Brands & Companies</p>
+                    <p className="text-[#939393] text-center helvetica-regular uppercase">TRUSTED BY</p>
+                    <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">30+ Brands & Companies</p>
                     <div>
                         <CompanyCardCarousel />
                     </div>

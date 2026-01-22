@@ -6,6 +6,8 @@ import { FaArrowRight } from 'react-icons/fa';
 import { FlipLink } from '../LinkFlip';
 import { Link } from 'react-router-dom';
 import { services } from './servies_data';
+import { BiRightArrowAlt } from 'react-icons/bi';
+import { LuArrowBigRight } from 'react-icons/lu';
 
 const Card = ({ i, title, services, src, progress, range, targetScale }) => {
 
@@ -30,17 +32,18 @@ const Card = ({ i, title, services, src, progress, range, targetScale }) => {
                             <h2 className='text-[40px] leading-11.25 lg:text-[170px] lg:leading-35.5 mb-4 uppercase'>{title}</h2>
                             {services?.map((item, index) => (
                                 <p key={index} className='text-lg helvetica-regular w-fit flex items-start gap-2 border-b border-[#222222]'>
-                                    <FaArrowRight className='mr-2 mt-1' />
+                                    {/* <FaArrowRight className='mr-2 mt-1' /> */}
+                                    <LuArrowBigRight className='mt-1 text-xl' />
                                     {item}
                                 </p>
                             ))}
                         </div>
                         <div className='flex'>
-                            <Link to="/">
-                                <div className="uppercase pl-5 pr-3 py-1.5 text-[100px] w-full leading-13.5 duration-300 text-black bg-[#9EFF50] flex items-center gap-2">
+                            <Link to="/" className="group">
+                                <div className=" uppercase pl-5 pr-3 py-1.5 text-[100px] w-full leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
                                     <FlipLink>Learn&nbsp;More</FlipLink>
-                                    <div className="text-[#9EFF50] bg-black p-3 text-[50px]">
-                                        <FaArrowRight />
+                                    <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 text-[50px]">
+                                        <BiRightArrowAlt className="group-hover:-rotate-45 duration-200" />
                                     </div>
                                 </div>
                             </Link>

@@ -28,7 +28,7 @@ export const HamburgerMenu = () => {
         { id: 2, text: 'Services', link: "/" },
         { id: 4, text: 'Our Work', link: "/" },
         { id: 4, text: 'About us', link: "/" },
-        { id: 4, text: 'Our Process', link: "/" },
+        // { id: 4, text: 'Our Process', link: "/" },
     ];
 
     return (
@@ -92,10 +92,10 @@ export const HamburgerMenu = () => {
                             <div className='flex-1' />
                             <div className='w-full flex flex-col gap-2'>
                                 <Link className='w-full'>
-                                    <p className='px-8 py-3 text-[3rem] leading-none lg:text-[60px] lg:leading-12.5 text-[#000000] bg-[#9EFF50] text-center'>Contact Us</p>
+                                    <p className='px-8 py-3 uppercase text-[3rem] leading-none lg:text-[60px] lg:leading-12.5 text-[#000000] bg-[#9EFF50] text-center'>Contact Us</p>
                                 </Link>
                                 <Link className='w-full'>
-                                    <p className='px-8 py-3 text-[3rem] leading-none lg:text-[60px] lg:leading-12.5 bg-[#000000] text-[#9EFF50] border border-[#9EFF50] text-center'>Get Quotation</p>
+                                    <p className='px-8 py-3 uppercase text-[3rem] leading-none lg:text-[60px] lg:leading-12.5 bg-[#000000] text-[#9EFF50] border border-[#9EFF50] text-center'>Get Quotation</p>
                                 </Link>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ const NavBar = () => {
                             <FlipLink flipClass="text-4xl">SERVICES</FlipLink>
                             <FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink>
                             <FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink>
-                            <FlipLink flipClass="text-4xl">Our&nbsp;PROCESS</FlipLink>
+                            {/* <FlipLink flipClass="text-4xl">Our&nbsp;PROCESS</FlipLink> */}
                         </div>
                         <div>
                             <Link to="/" className="group">

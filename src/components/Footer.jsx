@@ -51,15 +51,15 @@ const Footer = () => {
                 </div>
             </footer>
             <div className='lg:max-w-screen-2xl px-4 mx-auto lg:px-0'>
-                <p className="hidden lg:block text-white text-[10px] leading-none lg:text-[570px] lg:leading-120 text-center mt-10 lg:mt-0">PAZA STUDIO</p>
+                <p className="hidden lg:block text-white text-[10px] leading-none lg:text-[570px] lg:leading-120 text-center mt-10 lg:mt-0 ">PAZA STUDIO</p>
                 <div className='overflow-hidden px-4'>
                     <p className="lg:hidden text-white text-[230px] leading-50 mt-10 text-center">PAZA</p>
                     <p className="lg:hidden text-white text-[230px] leading-50 text-center">STUDIO</p>
                 </div>
             </div>
             <div className='flex flex-col lg:flex-row lg:justify-between items-center lg:max-w-screen-2xl px-4 mx-auto lg:px-0'>
-                <p className='helvetica-regular uppercase text-sm text-center lg:text-start'>Copyright 2026 Paza Sounds Studio | ALL RIGHTS RESERVED</p>
-                <p className='helvetica-regular uppercase text-sm my-4 lg:mt-0'>Developed by Podii</p>
+                <p className='helvetica-regular uppercase text-sm text-center lg:text-start text-[#939393]'>Copyright 2026 Paza Studio | ALL RIGHTS RESERVED.</p>
+                <p className='helvetica-regular uppercase text-sm my-4 lg:mt-0 text-[#939393]'>Developed by Podii</p>
             </div>
         </section>
 
