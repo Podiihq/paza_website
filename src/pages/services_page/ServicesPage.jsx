@@ -10,9 +10,9 @@ import { servicesFullData } from "../../assets/data/servies_data"
 import { LuArrowBigRight } from "react-icons/lu"
 
 const ServicesPage = () => {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0)
-    // })
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
     useEffect(() => {
         const locomotive = new LocomotiveScroll()

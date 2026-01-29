@@ -36,7 +36,7 @@ const Card = ({ i, title, services, src, progress, range, targetScale }) => {
                             ))}
                         </div>
                         <div className='flex'>
-                            <Link to="/" className="group">
+                            <Link to="/services" className="group">
                                 <div className=" uppercase pl-5 pr-3 py-1.5 text-[100px] w-full leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
                                     <FlipLink>Learn&nbsp;More</FlipLink>
                                     <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 text-[50px]">
