@@ -25,7 +25,7 @@ export const HamburgerMenu = () => {
 
     const menuItems = [
         { id: 1, text: 'Home', link: "/" },
-        { id: 2, text: 'Services', link: "/" },
+        { id: 2, text: 'Services', link: "/services" },
         { id: 4, text: 'Our Work', link: "/" },
         { id: 4, text: 'About us', link: "/" },
         // { id: 4, text: 'Our Process', link: "/" },
@@ -126,7 +126,7 @@ const NavBar = () => {
                     <div className='lg:flex items-center gap-6 uppercase'>
                         <div className='flex gap-6 tracking-wide'>
                             <Link to="/"><FlipLink flipClass="text-4xl">HOME</FlipLink></Link>
-                            <Link to="/"><FlipLink flipClass="text-4xl">SERVICES</FlipLink></Link>
+                            <Link to="/services"><FlipLink flipClass="text-4xl">SERVICES</FlipLink></Link>
                             <Link to="/"><FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink></Link>
                             <Link to="/"><FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink></Link>
                         </div>

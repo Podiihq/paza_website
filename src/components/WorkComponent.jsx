@@ -56,7 +56,7 @@ export const WorkCard = ({ poster, title, link_to, work, platform }) => {
                     />
                 )}
             </AnimatePresence>
-
+            
             <Link to={link_to}>
                 <div
                     onMouseEnter={() => setIsHovering(true)}

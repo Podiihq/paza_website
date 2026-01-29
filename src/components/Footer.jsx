@@ -30,7 +30,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-[40px] lg:text-[70px] uppercase text-[#9EFF50] underline">Website Links</h3>
                         <div className="mt-2 space-y-1 text-[24px] leading-none flex flex-col hover:text-[#9EFF50]">
-                            <FooterLink link="#" linkName="OUR&nbsp;SERVICES" />
+                            <FooterLink link="/services" linkName="OUR&nbsp;SERVICES" />
                             <FooterLink link="#" linkName="PORTFOLIO" />
                             <FooterLink link="#" linkName="ABOUT&nbsp;US" />
                             <FooterLink link="#" linkName="OUR&nbsp;PROCESS" />
@@ -70,8 +70,8 @@ export default Footer
 
 export const FooterLink = ({ link, linkName }) => {
     return (
-        <div className='group'>
-            <FlipLink href={link} flipClass="uppercase text-[36px] leading-none lg:text-[100px] lg:leading-[80px] text-white group-hover:text-[#9EFF50]">{linkName}</FlipLink>
-        </div>
+        <Link to={link} className='group'>
+            <FlipLink flipClass="uppercase text-[36px] leading-none lg:text-[100px] lg:leading-[80px] text-white group-hover:text-[#9EFF50]">{linkName}</FlipLink>
+        </Link>
     )
 }
