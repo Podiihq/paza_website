@@ -2,15 +2,25 @@ import LocomotiveScroll from "locomotive-scroll"
 import Footer from "../../components/Footer"
 import NavBar from "../../components/NavBar"
 import PageTransition from "../../components/page_transition/PageTransition"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { FlipLink } from "../../components/LinkFlip"
 import { BiRightArrowAlt } from "react-icons/bi"
 import { Link } from "react-router-dom"
 import { servicesFullData } from "../../assets/data/servies_data"
 import { LuArrowBigRight } from "react-icons/lu"
 import FAQSection from "../../components/FAQs"
+import Drawer from "../../components/DrawerComponent"
 
 const ServicesPage = () => {
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const openDrawer = () => {
+        setIsDrawerOpen(true);
+    };
+
+    const closeDrawer = () => {
+        setIsDrawerOpen(false);
+    };
+
     useEffect(() => {
         window.scrollTo(0, 0)
     })
@@ -21,6 +31,9 @@ const ServicesPage = () => {
             locomotive.destroy()
         }
     }, [])
+
+
+
 
     return (
         <PageTransition>
@@ -34,14 +47,14 @@ const ServicesPage = () => {
                             <div className="col-span-2">
                                 <p className="helvetica-light lg:text-xl pt-5 lg:pt-10 text-center lg:text-start lg:w-2/3">We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format. We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format.</p>
                                 <div className='mt-5 lg:mt-10 flex justify-center lg:w-fit'>
-                                    <Link to="#" className="group">
+                                    <button onClick={openDrawer} className="group cursor-pointer">
                                         <div className="uppercase pl-5 pr-3 py-1.5 text-[50px] leading-10 lg:text-[100px] w-full lg:leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
                                             <FlipLink>Work&nbsp;with&nbsp;Us</FlipLink>
                                             <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 lg:text-[50px]">
                                                 <BiRightArrowAlt className="group-hover:-rotate-45 duration-200 text-2xl lg:text-6xl" />
                                             </div>
                                         </div>
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -79,6 +92,7 @@ const ServicesPage = () => {
                     <Footer />
                 </section>
             </div>
+            <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} />
         </PageTransition>
     )
 }

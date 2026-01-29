@@ -120,7 +120,6 @@ const LandingPage = () => {
                 <section className="lg:pt-32">
                     <Footer />
                 </section>
-
             </div>
         </PageTransition>
 
