@@ -8,6 +8,7 @@ import { BiRightArrowAlt } from "react-icons/bi"
 import { Link } from "react-router-dom"
 import { servicesFullData } from "../../assets/data/servies_data"
 import { LuArrowBigRight } from "react-icons/lu"
+import FAQSection from "../../components/FAQs"
 
 const ServicesPage = () => {
     useEffect(() => {
@@ -33,7 +34,7 @@ const ServicesPage = () => {
                             <div className="col-span-2">
                                 <p className="helvetica-light lg:text-xl pt-5 lg:pt-10 text-center lg:text-start lg:w-2/3">We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format. We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format.</p>
                                 <div className='mt-5 lg:mt-10 flex justify-center lg:w-fit'>
-                                    <Link to="/" className="group">
+                                    <Link to="#" className="group">
                                         <div className="uppercase pl-5 pr-3 py-1.5 text-[50px] leading-10 lg:text-[100px] w-full lg:leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
                                             <FlipLink>Work&nbsp;with&nbsp;Us</FlipLink>
                                             <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 lg:text-[50px]">
@@ -48,12 +49,7 @@ const ServicesPage = () => {
                 </section>
                 <section className="lg:max-w-screen-2xl mx-auto px-4 lg:pt-20">
                     {servicesFullData.map((service) => (
-                        <div key={service.id} className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-14 py-20 border-b">
-                            {/* <div>
-                                {service.src && (
-                                    <img src={service.src} alt={service.title} className="w-full h-full object-cover" />
-                                )}
-                            </div> */}
+                        <div key={service.id} className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-14 py-20 border-b border-[#282828]">
                             <div className="flex">
                                 <p className="text-7xl leading-14 lg:text-[150px] uppercase lg:leading-28">0{service.id}.&nbsp;</p>
                                 <h2 className="text-7xl leading-14 lg:text-[150px] uppercase lg:leading-28">{service.title}</h2>
@@ -75,6 +71,9 @@ const ServicesPage = () => {
                             </div>
                         </div>
                     ))}
+                </section>
+                <section>
+                    <FAQSection />
                 </section>
                 <section className="lg:pt-32">
                     <Footer />

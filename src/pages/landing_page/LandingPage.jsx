@@ -15,6 +15,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import { ParalaxTextComponent } from "../../components/ParalaxText";
 import Footer from "../../components/Footer";
 import PageTransition from "../../components/page_transition/PageTransition";
+import FAQSection from "../../components/FAQs";
 
 
 const LandingPage = () => {
@@ -97,6 +98,9 @@ const LandingPage = () => {
                     <ParalaxTextComponent />
                 </section>
                 <section>
+                    <FAQSection />
+                </section>
+                <section>
                     <div className="pt-10 lg:pt-32 lg:max-w-screen-2xl mx-auto">
                         <p className="text-[#939393] text-center helvetica-regular uppercase">Worked with</p>
                         <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">50+ TOP Artists</p>
@@ -112,6 +116,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </section>
+
                 <section className="lg:pt-32">
                     <Footer />
                 </section>
