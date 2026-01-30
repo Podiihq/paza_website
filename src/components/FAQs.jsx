@@ -43,7 +43,8 @@ export default function FAQSection() {
 
     return (
         <section className="w-full lg:max-w-screen-2xl mx-auto px-4 pt-32 relative z-10">
-            <h2 className="text-[80px] leading-18 lg:text-[150px] lg:leading-24 uppercase">
+            <p className="text-[#939393] helvetica-regular uppercase mb-3">Frequently Asked Questions</p>
+            <h2 className="text-[80px] leading-18 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">
                 FAQs
             </h2>
 

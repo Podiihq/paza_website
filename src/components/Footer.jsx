@@ -44,9 +44,9 @@ const Footer = () => {
                             <h3 className="text-[40px] lg:text-[70px] uppercase text-[#9EFF50] underline">Website Links</h3>
                             <div className="mt-2 space-y-1 text-[24px] leading-none flex flex-col hover:text-[#9EFF50]">
                                 <FooterLink link="/services" linkName="OUR&nbsp;SERVICES" />
-                                <FooterLink link="#" linkName="PORTFOLIO" />
+                                <FooterLink link="/work" linkName="OUR&nbsp;WORK" />
                                 <FooterLink link="#" linkName="ABOUT&nbsp;US" />
-                                <FooterLink link="#" linkName="OUR&nbsp;PROCESS" />
+                                {/* <FooterLink link="#" linkName="OUR&nbsp;PROCESS" />  */}
                                 <FooterLink link="#" linkName="contact&nbsp;us" />
                             </div>
                         </div>

@@ -16,6 +16,7 @@ import { ParalaxTextComponent } from "../../components/ParalaxText";
 import Footer from "../../components/Footer";
 import PageTransition from "../../components/page_transition/PageTransition";
 import FAQSection from "../../components/FAQs";
+import WorkGallery from "../work_page/WorkGallery";
 
 
 const LandingPage = () => {
@@ -23,12 +24,12 @@ const LandingPage = () => {
         window.scrollTo(0, 0)
     })
 
-    useEffect(() => {
-        const locomotive = new LocomotiveScroll()
-        return () => {
-            locomotive.destroy()
-        }
-    }, [])
+    // useEffect(() => {
+    //     const locomotive = new LocomotiveScroll()
+    //     return () => {
+    //         locomotive.destroy()
+    //     }
+    // }, [])
     return (
         <PageTransition>
             <div className="bg-[#000000] text-[#EFEFEB]">
@@ -82,9 +83,10 @@ const LandingPage = () => {
                         <p className="helvetica-regular uppercase ">Portfolio</p>
                         <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">Our Work</p>
                     </div>
-                    <WorkComponent />
+                    {/* <WorkComponent /> */}
+                    <WorkGallery />
                     <div className='flex justify-end mt-10 lg:mt-20'>
-                        <Link to="/" className="group">
+                        <Link to="/work" className="group">
                             <div className=" uppercase pl-5 pr-3 py-1.5 text-[50px] leading-10 lg:text-[100px] w-full lg:leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">
                                 <FlipLink>ALL&nbsp;PROJECTS</FlipLink>
                                 <div className="text-[#9EFF50] border group-hover:border-[#9EFF50] bg-black p-3 lg:text-[50px]">
