@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiRightArrowAlt } from "react-icons/bi";
-import { LuArrowBigRight, LuX } from "react-icons/lu";
+import { LuArrowBigRight } from "react-icons/lu";
 import { workData } from "../../assets/data/WorkData";
 import { IoMdClose } from "react-icons/io";
 import LocomotiveScroll from "locomotive-scroll";
@@ -49,7 +49,7 @@ const WorkGallery = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center p-0 md:p-10 bg-black/40 backdrop-blur-sm"
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
                         onClick={() => setSelectedId(null)}
                     >
                         <motion.div
@@ -60,7 +60,7 @@ const WorkGallery = () => {
                         >
                             {/* Close Button */}
                             <motion.button
-                                className="absolute top-6 flex items-center right-6 z-20 py-2 px-4 bg-black hover:bg-[#9EFF50] hover:text-black backdrop-blur-md transition-colors border border-white hover:border-black"
+                                className="cursor-pointer absolute group top-10 flex items-center right-10 z-20 py-2 px-2 bg-black hover:bg-[#9EFF50] hover:text-black backdrop-blur-md transition-colors border border-white hover:border-black"
                                 onClick={() => setSelectedId(null)}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
@@ -68,8 +68,8 @@ const WorkGallery = () => {
                                 transition={{ delay: 0.2 }}
                             >
 
-                                <IoMdClose className="text-6xl" />
-                                <p className="text-6xl pr-2">CLOSE</p>
+                                <IoMdClose className="text-4xl lg:text-5xl group-hover:rotate-90 duration-300" />
+                                <p className="text-4xl lg:text-5xl pr-3">CLOSE</p>
                             </motion.button>
 
                             {/* Scrollable Container for Image + Content */}
@@ -142,26 +142,7 @@ const WorkGallery = () => {
                                         <div className="md:col-span-2">
                                             <h3 className="text-4xl font-bold uppercase mb-6 lg:text-5xl">About Project</h3>
                                             <p className="text-xl leading-relaxed font-light mb-8 helvetica-light">
-                                                This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.
-                                                This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
-                                                The project involved comprehensive post-production work including color grading
-                                                and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.This is a placeholder description for <span className="font-semibold">{selectedProject.title}</span>.
+                                                This is a placeholder description for <span className="font-semibold uppercase">{selectedProject.title}</span>.
                                                 The project involved comprehensive post-production work including color grading
                                                 and compositing to achieve a distinct visual style suitable for {selectedProject.platform}.
                                             </p>

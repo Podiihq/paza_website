@@ -67,7 +67,7 @@ const ServicesPage = () => {
                                 <p className="text-7xl leading-14 lg:text-[150px] uppercase lg:leading-28">0{service.id}.&nbsp;</p>
                                 <h2 className="text-7xl leading-14 lg:text-[150px] uppercase lg:leading-28">{service.title}</h2>
                             </div>
-                            <div className="">
+                            <div>
                                 {service.services.items.map((item, index) => (
                                     <div className="py-3 lg:py-6" key={index}>
                                         <h3 className="uppercase text-5xl lg:text-6xl leading-none pb-2 text-[#9EFF50] tracking-wide">{item.service_sub_title}</h3>

@@ -4,6 +4,7 @@ import { AnimatePresence } from 'motion/react';
 import LandingPage from './pages/landing_page/LandingPage';
 import ServicesPage from './pages/services_page/ServicesPage';
 import WorkPage from './pages/work_page/WorkPage';
+import { ArtistGallary } from './pages/artists_page/ArtistGallary';
 
 function App() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App() {
         <Route index element={<LandingPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/work" element={<WorkPage />} />
+        <Route path="/artists" element={<ArtistGallary />} />
       </Routes>
     </AnimatePresence>
   )

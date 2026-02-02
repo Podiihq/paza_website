@@ -151,6 +151,7 @@ const NavBar = () => {
                             <Link to="/services"><FlipLink flipClass="text-4xl">SERVICES</FlipLink></Link>
                             <Link to="/work"><FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink></Link>
                             <Link to="/"><FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink></Link>
+                            <Link to="/artists"><FlipLink flipClass="text-4xl">Artists</FlipLink></Link>
                         </div>
                         <div>
                             <div onClick={openDrawer} className="group cursor-pointer">
