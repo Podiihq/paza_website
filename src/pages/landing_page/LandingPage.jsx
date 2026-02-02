@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import NavBar from "../../components/NavBar";
-import LocomotiveScroll from 'locomotive-scroll';
 import HeroVideo from "../../assets/videos/hero_reel.mp4";
 import HeroImage from "../../assets/images/backs/02.png";
 import ArtistCardCarousel from "../../components/ArtistCard";
@@ -8,7 +7,6 @@ import CompanyCardCarousel from "../../components/CompanyCard";
 import ServicesCards from "../../components/ServiceCards/ServicesCards";
 import { DisplayMobileCard } from "../../components/ServiceCards/Card";
 import CurvedGallery from "../../components/CurvedGallery";
-import WorkComponent from "../../components/WorkComponent";
 import { FlipLink } from "../../components/LinkFlip";
 import { Link } from "react-router-dom";
 import { BiRightArrowAlt } from "react-icons/bi";
@@ -16,20 +14,13 @@ import { ParalaxTextComponent } from "../../components/ParalaxText";
 import Footer from "../../components/Footer";
 import PageTransition from "../../components/page_transition/PageTransition";
 import FAQSection from "../../components/FAQs";
-import WorkGallery from "../work_page/WorkGallery";
+import WorkGallery, { HomeWorkDisplay } from "../work_page/WorkGallery";
 
 
 const LandingPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     })
-
-    // useEffect(() => {
-    //     const locomotive = new LocomotiveScroll()
-    //     return () => {
-    //         locomotive.destroy()
-    //     }
-    // }, [])
     return (
         <PageTransition>
             <div className="bg-[#000000] text-[#EFEFEB]">
@@ -78,13 +69,13 @@ const LandingPage = () => {
                     <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-30 uppercase text-center">Your <span className="text-[#9EFF50]">vision,</span> our tools, <br className="hidden lg:block" /> one  <span className="text-[#9EFF50]">great result.</span></p>
                     <CurvedGallery />
                 </section>
-                <section className="lg:max-w-screen-2xl mx-auto py-10 px-4 lg:px-0">
+                <section className="lg:max-w-screen-2xl mx-auto py-10 px-4">
                     <div className="mb-6 lg:mb-20">
                         <p className="helvetica-regular uppercase ">Portfolio</p>
                         <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">Our Work</p>
                     </div>
-                    {/* <WorkComponent /> */}
-                    <WorkGallery />
+                    {/* <WorkGallery /> */}
+                    <HomeWorkDisplay />
                     <div className='flex justify-end mt-10 lg:mt-20'>
                         <Link to="/work" className="group">
                             <div className=" uppercase pl-5 pr-3 py-1.5 text-[50px] leading-10 lg:text-[100px] w-full lg:leading-13.5 duration-300 text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 border group-hover:border-[#9EFF50]">

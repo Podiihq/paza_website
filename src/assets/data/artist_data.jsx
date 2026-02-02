@@ -18,8 +18,24 @@ import Ssaru from "../../assets/images/artist/ssaru.jpg"
 import Typsy from "../../assets/images/artist/Tipsy-Gee.jpg"
 import Vic from "../../assets/images/artist/Vic-West.jpg"
 import Wadagliz from "../../assets/images/artist/Wadagliz.jpg"
-
-
+import Banton from "../../assets/images/artist/one-banton.jpg"
+import Amara from "../../assets/images/artist/amara-tari.jpg"
+import AmosJosh from "../../assets/images/artist/Amos-and-Josh.jpg"
+import Bahati from "../../assets/images/artist/bahati.jpg"
+import Barac from "../../assets/images/artist/barak-jacuzzi.webp"
+import Sigu from "../../assets/images/artist/brian-sigu.jpg"
+import Darklorde from "../../assets/images/artist/darklorder.png"
+import Dufla from "../../assets/images/artist/dufla.jpg"
+import Ethic from "../../assets/images/artist/Ethic.webp"
+import Fanaka from "../../assets/images/artist/fanaka.webp"
+import Jovvie from "../../assets/images/artist/jovvie-jov.jpg"
+import Kizo from "../../assets/images/artist/kizo-b.jpg"
+import Konshens from "../../assets/images/artist/Konshens.webp"
+import Meryl from "../../assets/images/artist/Meryl-Paige.webp"
+import Tokodi from "../../assets/images/artist/pascal.jpg"
+import Pilipili from "../../assets/images/artist/pilipili.jpg"
+import Kansoul from "../../assets/images/artist/kansoul.jpeg"
+import JonnyJunior from "../../assets/images/artist/jonny-junoir.png"
 
 
 export const artistData = [
@@ -106,5 +122,77 @@ export const artistData = [
     {
         poster: Wadagliz,
         artist_name: "Wadagliz"
+    },
+    {
+        poster: JonnyJunior,
+        artist_name: "Johnny Junior"
+    },
+    {
+        poster: Kansoul,
+        artist_name: "Kansoul"
+    },
+    {
+        poster: Pilipili,
+        artist_name: "Pilipili"
+    },
+    {
+        poster: Tokodi,
+        artist_name: "Pascal Tokodi"
+    },
+    {
+        poster: Meryl,
+        artist_name: "Meryl Paige"
+    },
+    {
+        poster: Konshens,
+        artist_name: "Konshens"
+    },
+    {
+        poster: Kizo,
+        artist_name: "Kizo B"
+    },
+    {
+        poster: Jovvie,
+        artist_name: "Jovvie Jov"
+    },
+    {
+        poster: Fanaka,
+        artist_name: "Fanaka"
+    },
+    {
+        poster: Ethic,
+        artist_name: "Ethic"
+    },
+    {
+        poster: Dufla,
+        artist_name: "Dufla"
+    },
+    {
+        poster: Darklorde,
+        artist_name: "Darklorde"
+    },
+    {
+        poster: Sigu,
+        artist_name: "Brian Sigu"
+    },
+    {
+        poster: Barac,
+        artist_name: "Barak Jacuzzi"
+    },
+    {
+        poster: Bahati,
+        artist_name: "Bahati"
+    },
+    {
+        poster: AmosJosh,
+        artist_name: "Amos and Josh"
+    },
+    {
+        poster: Banton,
+        artist_name: "1 de Banton"
+    },
+    {
+        poster: Amara,
+        artist_name: "Amara Tari"
     },
 ]

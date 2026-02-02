@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router';
 import { FlipLink } from './LinkFlip';
-import { FaArrowRight } from 'react-icons/fa';
 import { BiRightArrowAlt } from 'react-icons/bi';
 import Drawer from './DrawerComponent';
 
@@ -151,7 +150,7 @@ const NavBar = () => {
                             <Link to="/services"><FlipLink flipClass="text-4xl">SERVICES</FlipLink></Link>
                             <Link to="/work"><FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink></Link>
                             <Link to="/"><FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink></Link>
-                            <Link to="/artists"><FlipLink flipClass="text-4xl">Artists</FlipLink></Link>
+                            {/* <Link to="/artists"><FlipLink flipClass="text-4xl">Artists</FlipLink></Link> */}
                         </div>
                         <div>
                             <div onClick={openDrawer} className="group cursor-pointer">

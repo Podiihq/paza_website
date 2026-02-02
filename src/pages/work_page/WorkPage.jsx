@@ -17,7 +17,10 @@ const WorkPage = () => {
                     <NavBar />
                 </section>
                 <section className="lg:max-w-screen-2xl mx-auto px-4 pb-32">
-                    <p className="mb-20 lg:mb-0 text-9xl leading-25 pt-20 lg:pt-5 lg:text-[15rem] lg:leading-120 uppercase text-[#9EFF50] text-center">Selected Work</p>
+                    <div className="py-40">
+                        <p className="lg:mb-0 text-9xl leading-25 lg:pt-5 lg:text-[15rem] lg:leading-50 uppercase text-[#9EFF50] text-center">Selected Work</p>
+                        {/* <p className="lg:w-200 helvetica-light uppercase text-center flex-j">We’re a hands-on <span className="text-[#9EFF50] helvetica-regular"> Audio-visual Production Studio </span>  that craft complete brand experiencesfrom initial concept to final delivery in any format.</p> */}
+                    </div>
                     <WorkGallery />
                 </section>
                 <section>
