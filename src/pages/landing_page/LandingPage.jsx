@@ -38,7 +38,7 @@ const LandingPage = () => {
                     <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover z-10'>
                         <source src={HeroVideo} type="video/mp4" />
                     </video>
-                    <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover z-10'>
+                    <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover'>
                         <source src={StudioVideo} type="video/mp4" />
                     </video>
                     <div className='absolute w-screen h-200 bg-linear-to-t via-[#000000]/70 from-[#000000] to-transparent bottom-0 z-10' />
