@@ -79,7 +79,7 @@ export const CardMobile = ({ services, title, src }) => {
                 </div>
 
                 <div className='flex mt-4'>
-                    <Link to="/" className="group">
+                    <Link to="/services" className="group">
                         <div className=" uppercase pl-5 pr-3 py-2 text-[30px] w-full leading-13.5 duration-300 text-[#9EFF50] lg:bg-black border border-[#9EFF50] flex items-center gap-2">
                             <FlipLink>Learn&nbsp;More</FlipLink>
                             <div className="text-[#9EFF50] border border-[#9EFF50] bg-black p-1">

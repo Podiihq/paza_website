@@ -11,7 +11,7 @@ export const ImageComponent = ({ image, imageClass, skeletonClass, }) => {
 
     return (
         <div>
-            {isLoading && <Skeleton baseColor="#ccc" highlightColor="#D9D9D9" className={skeletonClass} />}
+            {isLoading && <Skeleton baseColor="#1a1a1a" highlightColor="#7b7b7b" className={skeletonClass} />}
             <img src={image}
                 alt=""
                 className={`${isLoading ? 'hidden' : ''} ${imageClass}`}

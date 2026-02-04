@@ -5,6 +5,8 @@ import { FlipLink } from './LinkFlip';
 import { BiRightArrowAlt } from 'react-icons/bi';
 import Drawer from './DrawerComponent';
 
+import logo from "../assets/logos/studio_logo/paza.png"
+
 export const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -27,7 +29,7 @@ export const HamburgerMenu = () => {
         { id: 1, text: 'Home', link: "/" },
         { id: 2, text: 'Services', link: "/services" },
         { id: 4, text: 'Our Work', link: "/work" },
-        { id: 4, text: 'About us', link: "/" },
+        { id: 4, text: 'About us', link: "/about" },
         // { id: 4, text: 'Our Process', link: "/" },
     ];
 
@@ -133,7 +135,10 @@ const NavBar = () => {
             <div className='fixed z-50 w-full lg:hidden'>
                 <div className='px-4 lg:px-0 flex justify-between items-center w-full'>
                     <Link to="/">
-                        <p className='text-[40px] leading-10 relative z-50 text-white'>PAZA STUDIO</p>
+                        <div className='flex items-center gap-2 relative z-50'>
+                            <img src={logo} alt="" className='w-10' />
+                            <p className='text-[40px] leading-10  text-white'>PAZA STUDIO</p>
+                        </div>
                     </Link>
                     <HamburgerMenu />
                 </div>
@@ -142,14 +147,17 @@ const NavBar = () => {
             <nav className='hidden lg:block w-screen py-2 fixed z-50'>
                 <div className='flex justify-between items-center mx-auto max-w-screen-2xl px-4'>
                     <Link to="/">
-                        <p className='text-[50px] leading-10'>PAZA STUDIO</p>
+                        <div className='flex items-center gap-2'>
+                            <img src={logo} alt="" className='w-10' />
+                            <p className='text-[50px] leading-10'>PAZA STUDIO</p>
+                        </div>
                     </Link>
                     <div className='lg:flex items-center gap-6 uppercase'>
                         <div className='flex gap-6 tracking-wide'>
                             <Link to="/"><FlipLink flipClass="text-4xl">HOME</FlipLink></Link>
                             <Link to="/services"><FlipLink flipClass="text-4xl">SERVICES</FlipLink></Link>
                             <Link to="/work"><FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink></Link>
-                            <Link to="/"><FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink></Link>
+                            <Link to="/about"><FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink></Link>
                             {/* <Link to="/artists"><FlipLink flipClass="text-4xl">Artists</FlipLink></Link> */}
                         </div>
                         <div>

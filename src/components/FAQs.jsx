@@ -48,7 +48,7 @@ export default function FAQSection() {
                 FAQs
             </h2>
 
-            <div className="space-y-4 mt-20 group">
+            <div className="space-y-4 mt-10 lg:mt-20 group">
                 {faqs.map((faq, index) => (
                     <div
                         key={index}

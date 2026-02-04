@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee"
 import { artistData } from "../assets/data/artist_data"
+import { ImageComponent } from "./ImageComponent"
 
 const ArtistCardCarousel = () => {
     return (
@@ -23,7 +24,7 @@ export default ArtistCardCarousel
 export const ArtistCard = ({ name, poster }) => {
     return (
         <div className="relative h-80 w-50 lg:h-130 lg:w-100 mr-4">
-            <img src={poster} alt="" className="h-full w-full object-cover relative" />
+            <ImageComponent image={poster} skeletonClass="h-80 w-50 lg:h-130 lg:w-100" imageClass="h-80 w-50 lg:h-130 lg:w-100 object-cover relative" />
             <div className='absolute w-full h-50 bg-linear-to-t from-[#000000] via-[#000000]/80 to-transparent bottom-0 z-20' />
             <div className="absolute bottom-1 left-2 lg:left-6 z-30">
                 <div className="">

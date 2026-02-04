@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import NavBar from "../../components/NavBar";
 import HeroVideo from "../../assets/videos/hero_reel.mp4";
-import HeroImage from "../../assets/images/backs/02.png";
+import HeroImage from "../../assets/images/studio/Paza.webp";
 import ArtistCardCarousel from "../../components/ArtistCard";
 import CompanyCardCarousel from "../../components/CompanyCard";
 import ServicesCards from "../../components/ServiceCards/ServicesCards";

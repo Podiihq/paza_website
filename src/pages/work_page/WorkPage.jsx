@@ -2,9 +2,9 @@ import { useEffect } from "react"
 import Footer from "../../components/Footer"
 import NavBar from "../../components/NavBar"
 import PageTransition from "../../components/page_transition/PageTransition"
-import WorkGallery from "./WorkGallery"
 import ArtistCardCarousel from "../../components/ArtistCard"
 import CompanyCardCarousel from "../../components/CompanyCard"
+import WorkGallery from "./WorkGallery"
 
 const WorkPage = () => {
     useEffect(() => {
