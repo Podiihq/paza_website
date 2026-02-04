@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import NavBar from "../../components/NavBar";
 import HeroVideo from "../../assets/videos/hero_reel.mp4";
-import HeroImage from "../../assets/images/studio/Paza.webp";
+import StudioVideo from "../../assets/images/studio/Paza_Studio.mp4";
 import ArtistCardCarousel from "../../components/ArtistCard";
 import CompanyCardCarousel from "../../components/CompanyCard";
 import ServicesCards from "../../components/ServiceCards/ServicesCards";
@@ -14,7 +14,7 @@ import { ParalaxTextComponent } from "../../components/ParalaxText";
 import Footer from "../../components/Footer";
 import PageTransition from "../../components/page_transition/PageTransition";
 import FAQSection from "../../components/FAQs";
-import WorkGallery, { HomeWorkDisplay } from "../work_page/WorkGallery";
+import { HomeWorkDisplay } from "../work_page/WorkGallery";
 
 
 const LandingPage = () => {
@@ -38,7 +38,9 @@ const LandingPage = () => {
                     <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover z-10'>
                         <source src={HeroVideo} type="video/mp4" />
                     </video>
-                    <img src={HeroImage} alt="" className='absolute top-0 w-full object-cover h-full' />
+                    <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover z-10'>
+                        <source src={StudioVideo} type="video/mp4" />
+                    </video>
                     <div className='absolute w-screen h-200 bg-linear-to-t via-[#000000]/70 from-[#000000] to-transparent bottom-0 z-10' />
                 </section>
                 <section>
