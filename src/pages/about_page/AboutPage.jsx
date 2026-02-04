@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import PageTransition from '../../components/page_transition/PageTransition'
 import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 import LocomotiveScroll from 'locomotive-scroll'
-import Drawer from '../../components/DrawerComponent'
 
 // import StudioImage from "../../assets/images/studio/Paza.webp"
 import StudioVideo from "../../assets/images/studio/Paza_Studio.mp4"
@@ -14,18 +13,10 @@ import ArtistCardCarousel from '../../components/ArtistCard'
 import CompanyCardCarousel from '../../components/CompanyCard'
 
 const AboutPage = () => {
-    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-    const openDrawer = () => {
-        setIsDrawerOpen(true);
-    };
 
-    const closeDrawer = () => {
-        setIsDrawerOpen(false);
-    };
-
-    // useEffect(() => {
-    //     window.scrollTo(0, 0)
-    // })
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
     useEffect(() => {
         const locomotive = new LocomotiveScroll()
@@ -44,7 +35,7 @@ const AboutPage = () => {
                     <div className="mt-10">
                         <div className='flex justify-center mb-20'>
                             <div className='lg:w-2/3'>
-                                <p className="helvetica-light lg:text-xl pt-5 lg:pt-10">
+                                <p className="helvetica-light lg:text-xl pt-5 lg:pt-10 lg:pr-32">
                                     We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format. We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format.
                                     We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format. We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format.</p>
                                 <div className='flex items-center flex-wrap gap-10 pt-10 justify-center lg:justify-normal'>
@@ -80,7 +71,6 @@ const AboutPage = () => {
                 </section>
                 <Footer />
             </div>
-            <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} />
         </PageTransition >
     )
 }
