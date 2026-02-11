@@ -24,7 +24,7 @@ const LandingPage = () => {
     return (
         <PageTransition>
             <div className="bg-[#000000] text-[#EFEFEB]">
-                <section className='h-screen'>
+                <section className='h-screen relative'>
                     <NavBar />
                     <div className="lg:max-w-screen-2xl mx-auto flex flex-col h-full">
                         <div className="flex-1" />
@@ -41,6 +41,11 @@ const LandingPage = () => {
                     <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover'>
                         <source src={StudioVideo} type="video/mp4" />
                     </video>
+                    {/* <VideoComponent
+                        video_src={HeroVideo}
+                        videoClass="absolute -top-270 w-full h-full object-cover z-10"
+                        skeletonClass="absolute -top-270 w-screen h-screen object-cover"
+                    /> */}
                     <div className='absolute w-screen h-200 bg-linear-to-t via-[#000000]/70 from-[#000000] to-transparent bottom-0 z-10' />
                 </section>
                 <section>

@@ -49,7 +49,7 @@ const CompanyCardCarousel = () => {
     // const bottomRow = shuffleArray(companyCards);
 
     return (
-        <div className="relative -space-y-26 lg:-space-y-16">
+        <div className="relative -space-y-20 lg:-space-y-16">
             <div className='hidden lg:block absolute w-30 h-100 bg-linear-to-r via-[#000000]/70 from-[#000000] to-transparent left-0 z-10' />
             <div className='hidden lg:block absolute w-30 h-100 bg-linear-to-l via-[#000000]/70 from-[#000000] to-transparent right-0 z-10' />
             {/* <Marquee speed={20} direction="left">
@@ -126,7 +126,6 @@ export const CompanyCard = ({ image, imageClass }) => {
     return (
         <div className={`${imageClass}`}>
             <img src={image} alt="" className="pr-10 w-full h-full object-contain saturate-50" />
-
         </div>
     )
 }

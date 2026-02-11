@@ -28,7 +28,7 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                     {/* Close Button */}
                     <motion.button
                         className="cursor-pointer absolute group top-5 right-5 lg:top-10 lg:right-10 z-20 py-2 px-2
-              bg-black hover:bg-[#9EFF50] hover:text-black border border-white hover:border-black flex items-center"
+                                  bg-black hover:bg-[#9EFF50] hover:text-black border border-white hover:border-black flex items-center"
                         onClick={onClose}
                     >
                         <IoMdClose className="text-4xl lg:text-5xl group-hover:rotate-90 duration-300" />
@@ -45,8 +45,14 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                                 alt={selectedProject.title}
                                 className="w-full h-full object-cover"
                             />
+                            {/* <ImageComponent
+                                layoutId={`card-image-${selectedProject.title}`}
+                                image={selectedProject.poster}
+                                alt={selectedProject.title}
+                                imageClass="w-full h-[40vh] md:h-[60vh] object-cover"
+                                skeletonClass="w-screen h-[40vh] md:h-[60vh]"
+                            /> */}
                             <div className="absolute inset-0 bg-linear-to-t from-black to-transparent" />
-
                             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
                                 <motion.h2
                                     layoutId={`card-title-${selectedProject.title}`}
@@ -63,8 +69,8 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                         {/* Body */}
                         <div className="p-6 md:p-12 grid md:grid-cols-3 gap-10">
                             <div className="md:border-r border-gray-200 pr-8">
-                                <h3 className="uppercase mb-6 text-4xl tracking-wide">Services</h3>
-                                <ul className="space-y-3">
+                                <h3 className="uppercase lg:mb-6 text-4xl lg:text-6xl tracking-wide text-[#939393]">Services</h3>
+                                <ul className="lg:space-y-2">
                                     {selectedProject.work.map((item, i) => (
                                         <li key={i} className="flex gap-2 uppercase helvetica-light items-center">
                                             <LuArrowBigRight className="text-[#9EFF50] text-xl" />
@@ -75,8 +81,8 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                             </div>
 
                             <div className="md:col-span-2">
-                                <h3 className="text-4xl uppercase mb-6 tracking-wide">About Project</h3>
-                                <p className="text-xl helvetica-light">
+                                <h3 className="lg:text-6xl text-4xl uppercase lg:mb-6 tracking-wide text-[#939393]">About Project</h3>
+                                <p className="helvetica-light">
                                     Placeholder description for{" "}
                                     <span className="uppercase tracking-wide helvetica-regular">
                                         {selectedProject.title}

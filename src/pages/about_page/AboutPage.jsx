@@ -11,6 +11,7 @@ import logo2 from "../../assets/logos/studio_logo/abh.png"
 import logo3 from "../../assets/logos/studio_logo/DOLBY_logo.png"
 import ArtistCardCarousel from '../../components/ArtistCard'
 import CompanyCardCarousel from '../../components/CompanyCard'
+import { VideoComponent } from '../../components/ImageComponent'
 
 const AboutPage = () => {
 
@@ -45,7 +46,7 @@ const AboutPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='relative'>
+                        <div>
                             <video autoPlay loop muted className='mx-auto lg:w-2/3 h-full object-cover z-10'>
                                 <source src={StudioVideo} type="video/mp4" />
                             </video>
