@@ -6,6 +6,7 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 import Drawer from './DrawerComponent';
 
 import logo from "../assets/logos/studio_logo/paza.png"
+import abh_logo from "../assets/logos/studio_logo/abh.png"
 
 export const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -135,9 +136,12 @@ const NavBar = () => {
             <div className='fixed z-50 w-full lg:hidden'>
                 <div className='px-4 lg:px-0 flex justify-between items-center w-full'>
                     <Link to="/">
-                        <div className='flex items-center gap-2 relative z-50'>
-                            <img src={logo} alt="" className='w-10' />
-                            <p className='text-[40px] leading-10  text-white'>PAZA STUDIO</p>
+                        <div className='flex items-center relative z-50'>
+                            <div className='flex items-center gap-2 '>
+                                <img src={logo} alt="" className='w-10' />
+                                {/* <p className='text-[40px] leading-10  text-white hidden'>PAZA STUDIO</p> */}
+                            </div>
+                            <img src={abh_logo} alt="" className='h-16' />
                         </div>
                     </Link>
                     <HamburgerMenu />
@@ -147,9 +151,12 @@ const NavBar = () => {
             <nav className='hidden lg:block w-screen py-2 fixed z-50'>
                 <div className='flex justify-between items-center mx-auto max-w-screen-2xl px-4'>
                     <Link to="/">
-                        <div className='flex items-center gap-2'>
-                            <img src={logo} alt="" className='w-10' />
-                            <p className='text-[50px] leading-10'>PAZA STUDIO</p>
+                        <div className='flex items-center relative z-50'>
+                            <div className='flex items-center gap-2 '>
+                                <img src={logo} alt="" className='w-10' />
+                                {/* <p className='text-[40px] leading-10  text-white'>PAZA STUDIO</p> */}
+                            </div>
+                            <img src={abh_logo} alt="" className='h-16' />
                         </div>
                     </Link>
                     <div className='lg:flex items-center gap-6 uppercase'>
