@@ -7,7 +7,7 @@ const ArtistCardCarousel = () => {
         <div className="relative">
             <div className='hidden lg:block absolute w-75 h-150 bg-linear-to-r via-[#000000]/70 from-[#000000] to-transparent left-0 z-20' />
             <div className='hidden lg:block absolute w-75 h-150 bg-linear-to-l via-[#000000]/70 from-[#000000] to-transparent right-0 z-20' />
-            <Marquee direction="right">
+            <Marquee direction="right" speed={100}>
                 {artistData.map((artist, index) => (
                     <ArtistCard key={index} name={artist.artist_name} poster={artist.poster} />
                 ))}

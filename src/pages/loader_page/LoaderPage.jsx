@@ -3,7 +3,7 @@ import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import logo1 from "../../assets/logos/studio_logo/paza.png"
 import logo2 from "../../assets/logos/studio_logo/abh.png"
 
-const LoaderPage = ({ onComplete, duration = 10 }) => {
+const LoaderPage = ({ onComplete, duration = 1 }) => {
     const progress = useMotionValue(0);
     const progressScale = useTransform(progress, (value) => value / 100);
     const [displayValue, setDisplayValue] = useState(0);
