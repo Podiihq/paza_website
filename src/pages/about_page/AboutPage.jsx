@@ -37,8 +37,11 @@ const AboutPage = () => {
                         <div className='flex justify-center mb-20'>
                             <div className='lg:w-2/3'>
                                 <p className="helvetica-light lg:text-xl pt-5 lg:pt-10 lg:pr-32">
-                                    We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format. We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format.
-                                    We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format. We’re a hands-on audio-visual production studio that craft complete brand experiencesfrom initial concept to final delivery in any format.</p>
+                                    We are a hands-on audio-visual production studio crafting complete brand experiences from initial concept to final delivery—across every format and platform. With a portfolio spanning over 50 of Kenya’s leading artists and more than 30 major brands and companies, we bring creative vision and technical precision together under one roof. From brand storytelling, sonic identity development, and full-scale campaign production to cinematic video capture, color grading, motion graphics, and multi-camera workflows, we build work that resonates both visually and emotionally.
+                                </p>
+                                <p className="helvetica-light lg:text-xl pt-5 lg:pt-10 lg:pr-32">
+                                    For filmmakers, we deliver original scores, immersive sound design, and pristine final mixes tailored for Stereo, 5.1 Surround, and emerging formats like Dolby Atmos®. For musicians and artists, we produce release-ready records, music videos, and content that amplifies their voice and future-proofs their sound. Beyond production, we invest in the next generation through mentoring in music production, scoring to picture, video creation, and immersive audio. Whatever the canvas—film, music, advertising, or digital—we shape ideas into powerful, end-to-end experiences that move audiences and elevate brands.
+                                </p>
                                 <div className='flex items-center flex-wrap gap-10 pt-10 justify-center lg:justify-normal'>
                                     <img src={logo1} alt="" className='w-20' />
                                     <img src={logo2} alt="" className='h-20 border border-[#1a1a1a]' />
