@@ -23,7 +23,7 @@ const Footer = () => {
                         <div className='flex flex-col h-full col-span-4'>
                             <h3 className="text-[40px] lg:text-[70px] uppercase text-[#9EFF50] underline">Contact us</h3>
                             <div className="mt-2 space-y-1 text-[24px] leading-none flex flex-col">
-                                <p className='uppercase text-[36px] leading-none lg:text-[100px] lg:leading-19 text-white'><span className='text-[#a1a1a1]'>Email:</span> paza@example.com</p>
+                                <p className='uppercase text-[36px] leading-none lg:text-[100px] lg:leading-19 text-white'><span className='text-[#a1a1a1]'>Email:</span> pazastudios@gmail.com </p>
                                 <p className='uppercase text-[36px] leading-none lg:text-[100px] lg:leading-19 text-white'><span className='text-[#a1a1a1]'>Phone: </span> +254-725-123-450</p>
                                 <p className='uppercase text-[36px] leading-none lg:text-[100px] lg:leading-19 text-white'><span className='text-[#a1a1a1]'>Location: </span> Ngong Road, Racecourse</p>
                             </div>
