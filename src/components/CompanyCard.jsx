@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee"
 import Logo1 from "../assets/logos/brands/absa.png" //absa
-import Logo2 from "../assets/logos/brands/chora_digital_logo.png"
+import Logo2 from "../assets/logos/brands/chora_logo.png"
 import Logo3 from "../assets/logos/brands/co-op.webp"
 import Logo4 from "../assets/logos/brands/CTRL-Z-LOGO.png"
 import Logo6 from "../assets/logos/brands/film_crew.jpeg"

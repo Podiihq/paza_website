@@ -53,24 +53,26 @@ const Footer = () => {
                         <div>
                             <h3 className="text-[40px] lg:text-[70px] uppercase text-[#9EFF50] underline">SOCIALS LINKS</h3>
                             <div className="mt-2 space-y-1 text-[24px] leading-none flex flex-col">
-                                <FooterLink link="#" linkName="INSTAGRAM" />
-                                <FooterLink link="#" linkName="YOUTUBE" />
-                                <FooterLink link="#" linkName="FACEBOOK" />
+                                <FooterLink link="https://www.instagram.com/pazastudios/" linkName="INSTAGRAM" />
+                                <FooterLink link="https://www.youtube.com/@PAZASTUDIOSAFRICA" linkName="YOUTUBE" />
+                                <FooterLink link="https://www.facebook.com/profile.php?id=100063553721809" linkName="FACEBOOK" />
                             </div>
                         </div>
 
                     </div>
                 </footer>
                 <div className='lg:max-w-screen-2xl px-4 mx-auto lg:px-0'>
-                    <p className="hidden lg:block text-white text-[10px] leading-none lg:text-[570px] lg:leading-120 text-center mt-10 lg:mt-0 ">PAZA STUDIO</p>
+                    <p className="hidden lg:block text-white text-[10px] leading-none lg:text-[510px] lg:leading-120 text-center mt-10 lg:mt-0 ">PAZA STUDIOS</p>
                     <div className='overflow-hidden px-4 pb-4'>
-                        <p className="lg:hidden text-white text-[230px] leading-40 mt-10 text-center">PAZA</p>
-                        <p className="lg:hidden text-white text-[230px] leading-42 text-center">STUDIO</p>
+                        <p className="lg:hidden text-white text-[200px] leading-40 mt-10 text-center">PAZA</p>
+                        <p className="lg:hidden text-white text-[200px] leading-42 text-center">STUDIOS</p>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row lg:justify-between items-center lg:max-w-screen-2xl px-4 mx-auto lg:px-0 pb-4'>
                     <p className='helvetica-regular uppercase text-sm text-center lg:text-start text-[#939393]'>Copyright 2026 Paza Studio | ALL RIGHTS RESERVED</p>
-                    <p className='helvetica-regular uppercase text-sm lg:my-4 lg:mt-0 text-[#939393]'>Developed by Podii</p>
+                    <p className='helvetica-regular uppercase text-sm lg:my-4 lg:mt-0 text-[#939393]'>Developed by&nbsp;
+                        <a className='helvetica-regular text-[#9EFF50] underline' href='https://podiihq.com/'>Podii</a>
+                    </p>
                 </div>
             </section>
             <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} />

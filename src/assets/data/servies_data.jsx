@@ -21,7 +21,8 @@ export const servicesData = [
         services: [
             "Professional Videography",
             "Multi - Camera Production",
-            "Drone Videography"
+            "Drone Videography",
+            "Immersive audio / Dolby atmos"
         ],
         src: Image2,
     },
@@ -41,6 +42,7 @@ export const servicesData = [
         services: [
             "Track Production & Beat Making",
             "Mixing & Mastering",
+            "5.1 Surround and Dolby atmos 7.1.4",
             "Vocal Production"
         ],
         src: Image4,
@@ -95,6 +97,7 @@ export const servicesFullData = [
                         "Professional Videography",
                         "Multi-Camera Production",
                         "Drone Videography",
+                        "Immersive audio / Dolby atmos"
                     ],
                 },
                 {
@@ -153,6 +156,7 @@ export const servicesFullData = [
                     service_description: [
                         "Track Production & Beat Making",
                         "Mixing & Mastering. Get a polished, release-ready master in Stereo, with future-proofing for immersive formats",
+                        "5.1 Surround and Dolby atmos 7.1.4",
                         "Vocal Production",
                     ],
                 },
