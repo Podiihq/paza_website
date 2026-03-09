@@ -31,7 +31,7 @@ export const HamburgerMenu = () => {
         { id: 2, text: 'Services', link: "/services" },
         { id: 4, text: 'Our Work', link: "/work" },
         { id: 4, text: 'About us', link: "/about" },
-        // { id: 4, text: 'Our Process', link: "/" },
+        { id: 4, text: 'Our Impact', link: "/impact" },
     ];
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -165,7 +165,7 @@ const NavBar = () => {
                             <Link to="/services"><FlipLink flipClass="text-4xl">SERVICES</FlipLink></Link>
                             <Link to="/work"><FlipLink flipClass="text-4xl">OUR&nbsp;WORK</FlipLink></Link>
                             <Link to="/about"><FlipLink flipClass="text-4xl">About&nbsp;US</FlipLink></Link>
-                            {/* <Link to="/artists"><FlipLink flipClass="text-4xl">Artists</FlipLink></Link> */}
+                            <Link to="/impact"><FlipLink flipClass="text-4xl">Our&nbsp;Impact</FlipLink></Link>
                         </div>
                         <div>
                             <div onClick={openDrawer} className="group cursor-pointer">

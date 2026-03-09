@@ -82,8 +82,8 @@ const Drawer = ({ isOpen, onClose }) => {
         setLoading(true);
         setSuccess(false);
 
-        const serviceID = '';
-        const templateID = '';
+        const serviceID = ''; // Service ID
+        const templateID = ''; // Template ID
 
         emailjs.send(serviceID, templateID, formData, {
             publicKey: '' // Pulblic Key Here

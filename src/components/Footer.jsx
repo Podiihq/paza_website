@@ -46,7 +46,7 @@ const Footer = () => {
                                 <FooterLink link="/services" linkName="OUR&nbsp;SERVICES" />
                                 <FooterLink link="/work" linkName="OUR&nbsp;WORK" />
                                 <FooterLink link="/about" linkName="ABOUT&nbsp;US" />
-                                {/* <FooterLink link="#" linkName="OUR&nbsp;PROCESS" />  */}
+                                <FooterLink link="/impact" linkName="OUR&nbsp;Impact" />
                                 {/* <FooterLink link="#" linkName="contact&nbsp;us" /> */}
                             </div>
                         </div>

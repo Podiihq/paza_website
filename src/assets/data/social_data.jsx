@@ -1,0 +1,157 @@
+export const socialData = [
+    {
+        title: "Tumaini Korona Campaign",
+        description: "COVID-19 awareness and vaccination",
+        orgs: [
+            "Ministry of Health (MoH) – Kenya",
+            "Amref Health Africa",
+            "World Health Organization(WHO)",
+            "UNICEF",
+            "USAID",
+            "Centre for Behaviour Change and Communication(CBCC)",
+        ]
+    },
+    {
+        title: "Turudi Shule Campaign",
+        description: "Back-to-school initiative post-COVID-19",
+        orgs: [
+            "Ministry of Education – Kenya",
+            "UNICEF Kenya",
+            "National Parents Association (NPA)",
+            "Centre for Behaviour Change and Communication (CBCC)",
+            "DigiRedio Community Radio Platform",
+            "Radio Jahazi",
+            "Action Aid",
+            "Ministry of Health (collaboration on safety protocols)",
+        ]
+    },
+    {
+        title: "Pata Chanjo Campaign",
+        description: "COVID-19 vaccine uptake – Gold SABRE Award Winner 2023",
+        orgs: [
+            "Ministry of Health (MoH) – Kenya",
+            "UNICEF Kenya",
+            "Gavi, the Vaccine Alliance",
+            "eHealth Africa",
+            "WPP Group",
+            "Gang Group",
+        ],
+        award: "🏆 Gold SABRE Award 2023 – Digital Campaign category (Africa region)"
+    },
+    {
+        title: "Washa Njia Campaign",
+        description: "HIV/AIDS awareness and prevention",
+        orgs: [
+            "Ministry of Health (MoH) – Kenya",
+            "National AIDS Control Council (NACC)",
+            "National Council for Population and Development (NCPD)",
+            "Gideon Mosi Media",
+            "Population Reference Bureau (PRB)",
+            "USAID",
+            "Amref Health Africa",
+            "LVCT Health",
+            "Kenya Red Cross Society",
+            "County Governments (various)",
+            "Community Health Volunteers (CHVs)",
+        ]
+    },
+    {
+        title: "Ukenya Campaign",
+        description: "Drought resilience and humanitarian response",
+        orgs: [
+            "Uchabanga Development Initiative(UDI)",
+            "Kenya Red Cross",
+            "Action Against Hunger",
+            "World Food Programme(WFP)",
+            "UNICEF",
+            "Ministry of Water, Sanitation and Irrigation",
+            "Ministry of Health",
+            "County Governments(Kilifi, Kwale, Tana River, Garissa, Wajir, Mandera, Marsabit, Turkana, West Pokot, Baringo, Laikipia, Samburu, Isiolo, Meru, Tharaka Nithi, Embu, Kitui, Makueni, Taita Taveta, Lamu)",
+            "National Drought Management Authority(NDMA)",
+            "Kenya Meteorological Department",
+            "GIZ(German Development Cooperation)",
+            "UK Aid",
+            "USAID",
+            "European Union"
+        ]
+    },
+    {
+        title: "Linda Mama Campaign",
+        description: "Free maternal healthcare",
+        orgs: [
+            "Ministry of Health (MoH) – Kenya",
+            "National Health Insurance Fund (NHIF)",
+            "County Governments (Isiolo, Kakamega, Kitui, Kwale, Makueni, Nairobi, Nakuru, Trans-Nzoia, Kiambu, Kisii, Kajiado, Migori, Homabay)",
+            "Susan Thompson Buffett Foundation",
+            "Bill & Melinda Gates Foundation",
+            "USAID (through Health Policy Plus)",
+            "ThinkWell",
+            "KEMRI Wellcome Trust Research Programme",
+            "Amref Health Africa (Tekeleza Project)",
+            "Amref International University (AMIU)",
+            "Health-e-Foundation (Lucy App)",
+            "Amref Health Innovations (M-Jali)",
+            "World Health Organization (WHO)",
+            "Gavi, the Vaccine Alliance",
+            "Commonwealth Scholarship Commission",
+            "Economic and Social Research Council",
+            "InSupply Health",
+            "Chartered Institute of Procurement and Supplies",
+            "National Parents Association",
+            "Beyond Zero Initiative",
+            "Community Health Volunteers",
+        ]
+    },
+    {
+        title: "UNICEF Samburu Campaign (Mainyoto Initiative)",
+        description: "Child health and community development",
+        orgs: [
+            " UNICEF Kenya",
+            "Ministry of Health (MoH)",
+            "Ministry of Education",
+            "Ministry of Water, Sanitation and Irrigation",
+            "Samburu County Government",
+            "National Drought Management Authority (NDMA)",
+            "Kenya Red Cross Society",
+            "Amref Health Africa",
+            "World Food Programme (WFP)",
+            "Food and Agriculture Organization (FAO)",
+            "Action Against Hunger",
+            "Save the Children",
+            "Christian Aid",
+            "Vétérinaires Sans Frontières (VSF) Germany",
+            "Vétérinaires Sans Frontières (VSF) Belgium",
+            "Catholic Diocese of Maralal",
+            "Samburu Girls Foundation",
+            "Community Health Volunteers (CHVs)",
+            "National Government Administration Officers (NGAO)"
+        ]
+    },
+
+    {
+        title: "UNICEF-USAID Turkana Campaign (Akilioko na Ateni na)",
+        description: "Community health and education in Turkana",
+        orgs: [
+            " UNICEF Kenya",
+            "USAID",
+            "Ministry of Health (MoH) – Kenya",
+            "Ministry of Education",
+            "Ministry of Water, Sanitation and Irrigation",
+            "Turkana County Government",
+            "National Drought Management Authority (NDMA)",
+            "Kenya Red Cross Society",
+            "Amref Health Africa",
+            "World Food Programme (WFP)",
+            "Food and Agriculture Organization (FAO)",
+            "Action Against Hunger",
+            "Save the Children",
+            "Christian Aid",
+            "Vétérinaires Sans Frontières (VSF) Germany",
+            "Vétérinaires Sans Frontières (VSF) Belgium",
+            "Catholic Diocese of Lodwar",
+            "Community Health Volunteers (CHVs)",
+            "National Government Administration Officers (NGAO)",
+        ]
+    },
+
+]

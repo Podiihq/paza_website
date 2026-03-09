@@ -34,7 +34,7 @@ import Konshens from "../../assets/images/artist/Konshens.webp"
 import Meryl from "../../assets/images/artist/Meryl-Paige.webp"
 import Tokodi from "../../assets/images/artist/pascal.jpg"
 import Pilipili from "../../assets/images/artist/pilipili.jpg"
-import Kansoul from "../../assets/images/artist/kansoul.jpeg"
+import Kansoul from "../../assets/images/artist/kansoul-music.jpg"
 import JonnyJunior from "../../assets/images/artist/jonny-junoir.png"
 
 

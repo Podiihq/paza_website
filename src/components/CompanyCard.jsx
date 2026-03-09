@@ -46,13 +46,12 @@ import Logo44 from "../assets/logos/new_brands/gvt-of-garissa.jpg"
 
 const companyCardsOne = [
     { image: Logo1, className: "h-24 w-24" },
-    { image: Logo2, className: "h-24 w-32" },
+    { image: Logo2, className: "h-32 w-40" },
     { image: Logo3, className: "h-24 w-24" },
     { image: Logo4, className: "h-24 w-50" },
     { image: Logo5, className: "w-40 h-40" },
     { image: Logo8, className: "h-30 w-30" },
-    { image: Logo9, className: "h-30 w-30" },
-    { image: Logo16, className: "h-16 w-24" },
+    { image: Logo9, className: "h-30 w-40" },
     { image: Logo10, className: "h-40 w-40" },
     { image: Logo11, className: "h-24 w-24" },
     { image: Logo15, className: "h-24 w-24" },
@@ -81,6 +80,7 @@ const companyCardsTwo = [
     { image: Logo32, className: "h-32 w-32" },
     { image: Logo33, className: "h-40 w-50" },
     { image: Logo40, className: "h-40 w-40" },
+    { image: Logo16, className: "h-20 w-32" },
     { image: Logo41, className: "h-32 w-32" },
     { image: Logo42, className: "h-40 w-40" },
     { image: Logo43, className: "h-32 w-32" },

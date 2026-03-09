@@ -9,6 +9,7 @@ import WorkPage from './pages/work_page/WorkPage';
 import { ArtistGallary } from './pages/artists_page/ArtistGallary';
 import AboutPage from './pages/about_page/AboutPage';
 import LoaderPage from './pages/loader_page/LoaderPage';
+import ImpactPage from './pages/impact_page/ImpactPage';
 
 function App() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
             <Route path="/work" element={<WorkPage />} />
             <Route path="/artists" element={<ArtistGallary />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/impact" element={<ImpactPage />} />
           </Routes>
         </MotionPresence>
       )}

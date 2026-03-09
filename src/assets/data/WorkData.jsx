@@ -4,8 +4,6 @@ import Image3 from "../../assets/images/shows/Reckless.jpeg"
 import Image4 from "../../assets/images/shows/Salem.jpg"
 import Image5 from "../../assets/images/shows/tuki.jpg"
 import Image6 from "../../assets/images/shows/auntie-boss.jpg"
-import Image7 from "../../assets/images/shows/hollow-film.png"
-import Image8 from "../../assets/images/shows/iknowmyrights.jpg"
 import Image9 from "../../assets/images/shows/ibura.jpg"
 import Image10 from "../../assets/images/shows/lumumba_explains_podcast.jpg"
 import Image11 from "../../assets/images/shows/Shanga.png"
@@ -19,8 +17,8 @@ export const workData = [
         title: "Aunty Boss",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "final Mix",
+            "Sound Design"
         ],
         platform: "MMP and Showmax"
     },
@@ -29,8 +27,11 @@ export const workData = [
         title: "Salem",
         link_to: "#",
         work: [
-            "Compositing",
+            "Music Composition",
+            "Final Mix",
+            "Sound Design",
             "Color Grading"
+
         ],
         platform: "MMP and Showmax"
     },
@@ -39,8 +40,9 @@ export const workData = [
         title: "Mama Duka",
         link_to: "#",
         work: [
-            "Visual Production & ",
-            "Color Grading"
+            "Final Mix",
+            "Music",
+            "Sound Design"
         ],
         platform: "AMVCA Awards 2014"
     },
@@ -49,8 +51,9 @@ export const workData = [
         title: "Reckless",
         link_to: "#",
         work: [
-            "Final Mix",
-            "Composition"
+            "Theme Music",
+            "Original Music",
+            "Mood Scores"
         ],
         platform: "MMP and Showmax"
     },
@@ -59,7 +62,10 @@ export const workData = [
         title: "Tuki",
         link_to: "#",
         work: [
-            "Color Grading"
+            "Final Mix",
+            "Sound Design",
+            "Music",
+            "Radio Show Production"
         ],
         platform: "K24, NTV, YouTube & Community Radios"
     },
@@ -68,8 +74,10 @@ export const workData = [
         title: "Limo on the run",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "Color Grading",
+            "Original Score",
+            "Sound design",
+            "Final Mix"
         ],
         platform: "Documentary"
     },
@@ -78,8 +86,7 @@ export const workData = [
         title: "Twak-Weche Chwakore Podcast",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "Theme Music"
         ],
         platform: "Youtube"
     },
@@ -88,8 +95,8 @@ export const workData = [
         title: "The Search",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "Audio Capture",
+            "Audio Post Production"
         ],
         platform: "Kiss TV"
     },
@@ -98,7 +105,9 @@ export const workData = [
         title: "Shanga",
         link_to: "#",
         work: [
-            "Compositing",
+            "Music Composition",
+            "Final Mix",
+            "Sound Design",
             "Color Grading"
         ],
         platform: "MMP and Showmax"
@@ -108,8 +117,7 @@ export const workData = [
         title: "Nimehudumiwa Documentary",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "Music",
         ],
         platform: "Youtube"
     },
@@ -118,8 +126,7 @@ export const workData = [
         title: "Lumumba Explains",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "Music"
         ],
         platform: "Youtube"
     },
@@ -128,8 +135,8 @@ export const workData = [
         title: "Kipawa Show",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "Stems Audio capture ",
+            "Final mix"
         ],
         platform: "KTN"
     },
@@ -138,20 +145,11 @@ export const workData = [
         title: "Irabura: The Odyssey",
         link_to: "#",
         work: [
-            "Compositing",
-            "Color Grading"
+            "Music",
+            "Sound Design",
+            "Final Mix"
         ],
         platform: "Best Experimental Short Film, Cannes Short Films Festival 2025"
-    },
-    {
-        poster: Image8,
-        title: "I know my rights Short Film",
-        link_to: "#",
-        work: [
-            "Compositing",
-            "Color Grading"
-        ],
-        platform: ""
     },
     {
         poster: ImagePlaceholder,
@@ -163,14 +161,4 @@ export const workData = [
         ],
         platform: "Youtube"
     },
-    {
-        poster: Image7,
-        title: "Hollow film",
-        link_to: "#",
-        work: [
-            "5.1"
-        ],
-        platform: ""
-    },
-
 ]
