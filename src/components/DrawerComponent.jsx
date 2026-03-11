@@ -82,11 +82,11 @@ const Drawer = ({ isOpen, onClose }) => {
         setLoading(true);
         setSuccess(false);
 
-        const serviceID = ''; // Service ID
-        const templateID = ''; // Template ID
+        const serviceID = 'service_yhxdle9'; // Service ID
+        const templateID = 'template_o0grhx9'; // Template ID
 
         emailjs.send(serviceID, templateID, formData, {
-            publicKey: '' // Pulblic Key Here
+            publicKey: 'WtWEeTaCnMU1be3vx' // Pulblic Key Here
         })
             .then(res => {
                 setFormData({
@@ -219,16 +219,28 @@ const Drawer = ({ isOpen, onClose }) => {
                                     )}
                                 </div>
                             </button> */}
-                            <button className="group cursor-pointer w-full ">
+                            <button
+                                type="submit"
+                                id="loaderButton"
+                                whileTap={{ scale: 0.95 }}
+                                className="group cursor-pointer w-full" >
                                 <div className="uppercase pl-5 pr-3 py-1.5 text-[50px] leading-10 lg:text-[100px] w-full lg:leading-13.5 duration-300
                                  text-black group-hover:text-[#9EFF50] bg-[#9EFF50] group-hover:bg-black flex items-center gap-2 justify-center 
                                  border group-hover:border-[#9EFF50]">
-                                    <FlipLink>Get&nbsp;Quotation</FlipLink>
+                                    {loading ? "" :
+                                        <FlipLink>Get&nbsp;Quotation</FlipLink>
+                                    }
+                                    {loading && (
+                                        <div id="loader" className="absolute inset-0 items-center justify-center flex">
+                                            <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-white"></div>
+                                        </div>
+                                    )}
                                 </div>
                             </button>
                             {success && (
-                                <div className="mt-4 text-green-600">
-                                    Form submitted successfully! Thanks for reaching out 🥳🥳!!
+                                <div className="mt-4 text-green-600 text-center helvetica-regular p-3 bg-green-100 rounded-lg">
+                                    🥳🥳Form submitted successfully! Thanks for reaching out 🥳🥳!! <br />
+                                    We will get back to you as soon as possible!!
                                 </div>
                             )}
                         </form>
@@ -236,7 +248,7 @@ const Drawer = ({ isOpen, onClose }) => {
                         <div className='flex-1'></div>
                         <div className='flex items-center'>
                             <p className='helvetica-light'>Prefer email? &nbsp;</p>
-                            <a href="mailto:aderodaniel4776@gmail.com" className='text-[#9EFF50] helvetica-light'> abhstudio@gmail.com</a>
+                            <a href="mailto:pazastudios@gmail.com" className='text-[#9EFF50] helvetica-light'> pazastudios@gmail.com</a>
                         </div>
                     </motion.div>
                 </div >
