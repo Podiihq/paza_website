@@ -67,20 +67,20 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                         </motion.div>
 
                         {/* Body */}
-                        <div className="p-6 md:p-12 grid md:grid-cols-3 gap-10">
-                            <div className="md:border-r border-gray-200 pr-8">
-                                <h3 className="uppercase lg:mb-6 text-4xl lg:text-6xl tracking-wide text-[#939393]">Services</h3>
-                                <ul className="lg:space-y-2">
+                        <div className="px-6 md:px-10">
+                            <div>
+                                <h3 className="uppercase text-4xl lg:text-6xl tracking-wide text-[#939393] mb-2">Services / Our Role in the project</h3>
+                                <ul className="flex items-center gap-3 flex-wrap">
                                     {selectedProject.work.map((item, i) => (
-                                        <li key={i} className="flex gap-2 uppercase helvetica-light items-center">
-                                            <LuArrowBigRight className="text-[#9EFF50] text-xl" />
+                                        <li key={i} className="flex gap-2 uppercase helvetica-light items-center px-4 py-2 border border-[#5a5a5a] rounded-full">
+                                            {/* <LuArrowBigRight className="text-[#9EFF50] text-xl" /> */}
                                             {item}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
 
-                            <div className="md:col-span-2">
+                            {/* <div className="md:col-span-2">
                                 <h3 className="lg:text-6xl text-4xl uppercase lg:mb-6 tracking-wide text-[#939393]">About Project</h3>
                                 <p className="helvetica-light">
                                     Placeholder description for{" "}
@@ -88,7 +88,7 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                                         {selectedProject.title}
                                     </span>.
                                 </p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </motion.div>
