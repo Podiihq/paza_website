@@ -42,11 +42,14 @@ import Logo41 from "../assets/logos/new_brands/moon_beam.png"
 import Logo42 from "../assets/logos/new_brands/MoH Kenya.jpg"
 import Logo43 from "../assets/logos/new_brands/Kenya_Power_logo.jpeg" // Sawa
 import Logo44 from "../assets/logos/new_brands/gvt-of-garissa.jpg"
+import Logo45 from "../assets/logos/new_brands/good_life.svg"
+import Logo46 from "../assets/logos/new_brands/pesalink-logo-light.png"
 
 
 const companyCardsOne = [
     { image: Logo1, className: "h-24 w-24" },
     { image: Logo2, className: "h-32 w-40" },
+    { image: Logo46, className: "h-16 w-50" },
     { image: Logo3, className: "h-24 w-24" },
     { image: Logo4, className: "h-24 w-50" },
     { image: Logo5, className: "w-40 h-40" },
@@ -64,6 +67,7 @@ const companyCardsOne = [
     { image: Logo31, className: "h-32 w-32" },
     { image: Logo38, className: "h-40 w-40" },
     { image: Logo35, className: "h-40 w-50" },
+    { image: Logo45, className: "h-40 w-50" },
 
 ];
 

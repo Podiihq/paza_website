@@ -1,5 +1,4 @@
 import React from 'react';
-import { ImageComponent } from './ImageComponent';
 import Marquee from 'react-fast-marquee';
 
 import Image1 from "../assets/images/backs/01.png"
@@ -16,6 +15,7 @@ import Video5 from "../assets/videos/curved_videos/05.mp4"
 import Video6 from "../assets/videos/curved_videos/06.mp4"
 import Video7 from "../assets/videos/curved_videos/07.mp4"
 import Video8 from "../assets/videos/curved_videos/08.mp4"
+import Video9 from "../assets/videos/curved_videos/09.mp4"
 
 
 const images = [
@@ -23,7 +23,7 @@ const images = [
 ];
 
 const video_reel = [
-    Video1, Video2, Video3, Video5, Video6, Video7, Video8
+    Video1, Video3, Video9, Video4, Video2, Video7
 ];
 
 const CurvedGallery = () => {
@@ -34,10 +34,6 @@ const CurvedGallery = () => {
                     {
                         video_reel.map((item, index) => (
                             <div className="relative w-full h-full">
-                                {/* <ImageComponent key={index} image={item} alt=""
-                                    imageClass='w-[400px] h-[600px] object-cover'
-                                    skeletonClass="w-full h-[600px]"
-                                /> */}
                                 <video autoPlay loop muted className='w-100 h-150 object-cover' >
                                     <source key={index} src={item} type="video/mp4" />
                                 </video>
@@ -50,14 +46,10 @@ const CurvedGallery = () => {
             </div >
             {/* Mobile View */}
             <div className="image-row-mobile flex justify-center w-full object-cover lg:hidden mt-5 relative" >
-                <Marquee speed={10}>
+                <Marquee speed={40}>
                     {
                         video_reel.slice(0, 5).map((item, index) => (
                             <div className="relative w-full h-full">
-                                {/* <ImageComponent key={index} image={item} alt=""
-                                    imageClass='w-[150px] md:w-[200px] h-[300px] object-cover'
-                                    skeletonClass="w-[150px] md:w-[200px] h-[250px]"
-                                /> */}
                                 <video key={index} autoPlay loop muted className='w-37.5 md:w-50 h-75 object-cover'>
                                     <source src={item} type="video/mp4" />
                                 </video>

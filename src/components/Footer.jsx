@@ -64,8 +64,8 @@ const Footer = () => {
                 <div className='lg:max-w-screen-2xl px-4 mx-auto lg:px-0'>
                     <p className="hidden lg:block text-white text-[10px] leading-none lg:text-[510px] lg:leading-120 text-center mt-10 lg:mt-0 ">PAZA STUDIOS</p>
                     <div className='overflow-hidden px-4 pb-4'>
-                        <p className="lg:hidden text-white text-[200px] leading-40 mt-10 text-center">PAZA</p>
-                        <p className="lg:hidden text-white text-[200px] leading-42 text-center">STUDIOS</p>
+                        <p className="lg:hidden text-white text-[180px] leading-40 mt-10 text-center">PAZA</p>
+                        <p className="lg:hidden text-white text-[180px] leading-40 text-center">STUDIOS</p>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row lg:justify-between items-center lg:max-w-screen-2xl px-4 mx-auto lg:px-0 pb-4'>

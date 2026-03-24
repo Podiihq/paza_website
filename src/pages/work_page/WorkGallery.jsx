@@ -5,7 +5,6 @@ import { LuArrowBigRight } from "react-icons/lu";
 import { workData } from "../../assets/data/WorkData";
 import { IoMdClose } from "react-icons/io";
 import LocomotiveScroll from "locomotive-scroll";
-import { ImageComponent } from "../../components/ImageComponent";
 
 const WorkDetailOverlay = ({ selectedProject, onClose }) => {
     if (!selectedProject) return null;
@@ -38,21 +37,14 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                     {/* Scroll Content */}
                     <div className="h-full overflow-y-auto no-scrollbar">
                         {/* Hero */}
-                        <motion.div className="relative w-full h-[40vh] md:h-[60vh]">
+                        <motion.div className="relative w-full h-[80vh]">
                             <motion.img
                                 layoutId={`card-image-${selectedProject.title}`}
                                 src={selectedProject.poster}
                                 alt={selectedProject.title}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover object-top"
                             />
-                            {/* <ImageComponent
-                                layoutId={`card-image-${selectedProject.title}`}
-                                image={selectedProject.poster}
-                                alt={selectedProject.title}
-                                imageClass="w-full h-[40vh] md:h-[60vh] object-cover"
-                                skeletonClass="w-screen h-[40vh] md:h-[60vh]"
-                            /> */}
-                            <div className="absolute inset-0 bg-linear-to-t from-black to-transparent" />
+                            <div className="absolute w-full h-100 bottom-0 bg-linear-to-t from-black to-transparent" />
                             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
                                 <motion.h2
                                     layoutId={`card-title-${selectedProject.title}`}
@@ -60,7 +52,7 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                                 >
                                     {selectedProject.title}
                                 </motion.h2>
-                                <p className="text-4xl md:text-5xl uppercase">
+                                <p className="text-4xl md:text-5xl leading-8 uppercase pr-4 pt-3">
                                     {selectedProject.platform}
                                 </p>
                             </div>
@@ -72,23 +64,12 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                                 <h3 className="uppercase text-4xl lg:text-6xl tracking-wide text-[#939393] mb-2">Services / Our Role in the project</h3>
                                 <ul className="flex items-center gap-3 flex-wrap">
                                     {selectedProject.work.map((item, i) => (
-                                        <li key={i} className="flex gap-2 uppercase helvetica-light items-center px-4 py-2 border border-[#5a5a5a] rounded-full">
-                                            {/* <LuArrowBigRight className="text-[#9EFF50] text-xl" /> */}
+                                        <li key={i} className="uppercase helvetica-light px-4 py-2 border border-[#5a5a5a] rounded-full">
                                             {item}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-
-                            {/* <div className="md:col-span-2">
-                                <h3 className="lg:text-6xl text-4xl uppercase lg:mb-6 tracking-wide text-[#939393]">About Project</h3>
-                                <p className="helvetica-light">
-                                    Placeholder description for{" "}
-                                    <span className="uppercase tracking-wide helvetica-regular">
-                                        {selectedProject.title}
-                                    </span>.
-                                </p>
-                            </div> */}
                         </div>
                     </div>
                 </motion.div>
@@ -187,7 +168,6 @@ export const WorkCard = ({ project, setSelectedId, isSelected }) => {
                 className="py-4 lg:py-4 flex justify-between items-center border-t border-b border-[#1a1a1a] lg:border-[#1a1a1a] hover:border-[#9EFF50] group hover:text-[#9EFF50] bg-transparent cursor-pointer relative"
             >
                 <div className="flex items-start gap-4">
-                    {/* Tiny thumbnail for layoutId continuity if header image is hidden on hover */}
                     <motion.img
                         layoutId={isHovering ? undefined : `card-image-${project.title}`}
                         src={project.poster}
@@ -197,7 +177,7 @@ export const WorkCard = ({ project, setSelectedId, isSelected }) => {
                     <div className="flex flex-col lg:flex-row">
                         <motion.h2
                             layoutId={`card-title-${project.title}`}
-                            className="uppercase text-6xl leading-11 tracking-wide lg:text-9xl lg:leading-24 pr-3 font-medium"
+                            className="uppercase text-6xl leading-11 tracking-wide lg:text-9xl lg:leading-20 pr-3 font-medium"
                         >
                             {project.title}
                         </motion.h2>

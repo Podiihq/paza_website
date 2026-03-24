@@ -3,10 +3,11 @@ import Image2 from "../../assets/images/shows/Limo on the run.png"
 import Image3 from "../../assets/images/shows/Reckless.jpeg"
 import Image4 from "../../assets/images/shows/Salem.jpg"
 import Image5 from "../../assets/images/shows/tuki.jpg"
-import Image6 from "../../assets/images/shows/auntie-boss.jpg"
+import Image6 from "../../assets/images/shows/Auntie-Boss.png"
 import Image9 from "../../assets/images/shows/ibura.jpg"
 import Image10 from "../../assets/images/shows/lumumba_explains_podcast.jpg"
 import Image11 from "../../assets/images/shows/Shanga.png"
+import Image12 from "../../assets/images/shows/nilichoma.webp"
 
 import ImagePlaceholder from "../../assets/images/placeholder.png"
 
@@ -160,5 +161,15 @@ export const workData = [
             "Color Grading"
         ],
         platform: "Youtube"
+    },
+    {
+        poster: Image12,
+        title: "Nilichoma Documentary",
+        link_to: "#",
+        work: [
+            "Scoring",
+            "Original Music"
+        ],
+        platform: "Showmax"
     },
 ]

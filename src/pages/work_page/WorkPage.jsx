@@ -32,7 +32,7 @@ const WorkPage = () => {
                     </div>
                     <div className="pt-32 lg:max-w-6xl mx-auto">
                         <p className="text-[#939393] text-center helvetica-regular uppercase">TRUSTED BY</p>
-                        <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">30+ Brands & Companies</p>
+                        <p className="px-4 lg:px-0 text-[80px] leading-16 uppercase text-center text-[#939393]">40+ Brands & Companies</p>
                         <div>
                             <CompanyCardCarousel />
                         </div>
