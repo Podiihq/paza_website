@@ -16,9 +16,9 @@ import BrayoImage3 from "../../assets/images/brayo/brayo-06.png"
 
 const AboutPage = () => {
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    })
+    // useEffect(() => {
+    //     window.scrollTo(0, 0)
+    // })
 
     useEffect(() => {
         const locomotive = new LocomotiveScroll()
@@ -64,9 +64,13 @@ const AboutPage = () => {
                                             </p>
                                             <p className='uppercase text-4xl pt-4 text-[#737373]'>Socials:</p>
                                             <h3 className="uppercase text-4xl leading-7 pb-2">
-                                                <span className='underline hover:text-[#737373]'><a href="#">Instagram</a></span>,&nbsp;
-                                                <span className='underline hover:text-[#737373]'><a href="#">X (TWITTER)</a></span>,&nbsp;
-                                                <span className='underline hover:text-[#737373]'><a href="#">&nbsp;Facebook</a></span>
+                                                <span className='underline hover:text-[#737373]'><a href="#">Instagram</a></span>, &nbsp;
+                                                <span className='underline hover:text-[#737373]'><a href="#">X (TWITTER)</a></span>, &nbsp;
+                                                <span className='underline hover:text-[#737373]'><a href="#">&nbsp;Facebook</a></span>, &nbsp;
+                                                <span className='underline hover:text-[#737373]'><a href="#">&nbsp;Tiktok</a></span>
+                                            </h3>
+                                            <h3 className="uppercase text-6xl leading-20 pt-10 text-center">
+                                                "Persistant quest for zero deffect"
                                             </h3>
                                         </div>
                                     </div>
