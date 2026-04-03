@@ -117,7 +117,7 @@ export const artistData = [
     },
     {
         poster: Vic,
-        artist_name: "Vic"
+        artist_name: "Vic West"
     },
     {
         poster: Wadagliz,

@@ -58,18 +58,18 @@ const AboutPage = () => {
                                     <div>
                                         <img src={BrayoImage2} alt="" className='lg:w-140 h-fit' />
                                         <div className='border p-4 border-[#1F1F1F] mt-4 bg-[#0B0B0B]'>
-                                            <h3 className="uppercase text-5xl lg:text-6xl leading-10 text-[#9EFF50]">Brian</h3>
+                                            <h3 className="uppercase text-5xl lg:text-8xl leading-16 text-[#9EFF50]">Brian</h3>
                                             <p className="helvetica-light flex items-start justify-start gap-2 lg:text-xl pt-2">
                                                 CEO, Director, Producer
                                             </p>
-                                            <p className='uppercase text-4xl pt-4 text-[#737373]'>Socials:</p>
+                                            {/* <p className='uppercase helvetica-light pt-4 text-[#737373]'>Socials:</p>
                                             <h3 className="uppercase text-4xl leading-7 pb-2">
-                                                <span className='underline hover:text-[#737373]'><a href="#">Instagram</a></span>, &nbsp;
-                                                <span className='underline hover:text-[#737373]'><a href="#">X (TWITTER)</a></span>, &nbsp;
-                                                <span className='underline hover:text-[#737373]'><a href="#">&nbsp;Facebook</a></span>, &nbsp;
-                                                <span className='underline hover:text-[#737373]'><a href="#">&nbsp;Tiktok</a></span>
-                                            </h3>
-                                            <h3 className="uppercase text-6xl leading-20 pt-10 text-center">
+                                                <span className='hover:text-[#737373]'><a href="#">Instagram</a></span>, &nbsp;
+                                                <span className='hover:text-[#737373]'><a href="#">X (TWITTER)</a></span>, &nbsp;
+                                                <span className='hover:text-[#737373]'><a href="#">&nbsp;Facebook</a></span>, &nbsp;
+                                                <span className='hover:text-[#737373]'><a href="#">&nbsp;Tiktok</a></span>
+                                            </h3> */}
+                                            <h3 className="uppercase text-6xl leading-20 pt-5 text-[#737373]">
                                                 "Persistant quest for zero deffect"
                                             </h3>
                                         </div>
