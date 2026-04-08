@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import NavBar from "../../components/NavBar";
 import HeroVideo from "../../assets/videos/hero_reel.mp4";
-import StudioVideo from "../../assets/images/studio/Paza_Studio.mp4";
 import ArtistCardCarousel from "../../components/ArtistCard";
 import CompanyCardCarousel from "../../components/CompanyCard";
 import ServicesCards from "../../components/ServiceCards/ServicesCards";
@@ -15,6 +14,7 @@ import Footer from "../../components/Footer";
 import PageTransition from "../../components/page_transition/PageTransition";
 import FAQSection from "../../components/FAQs";
 import { HomeWorkDisplay } from "../work_page/WorkGallery";
+import HeroLoading from "../../assets/images/other/hero-loading.png"
 
 
 const LandingPage = () => {
@@ -38,14 +38,7 @@ const LandingPage = () => {
                     <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover z-10'>
                         <source src={HeroVideo} type="video/mp4" />
                     </video>
-                    <video autoPlay loop muted className='absolute top-0 w-full h-full object-cover'>
-                        <source src={StudioVideo} type="video/mp4" />
-                    </video>
-                    {/* <VideoComponent
-                        video_src={HeroVideo}
-                        videoClass="absolute -top-270 w-full h-full object-cover z-10"
-                        skeletonClass="absolute -top-270 w-screen h-screen object-cover"
-                    /> */}
+                    <img src={HeroLoading} alt="" className="absolute top-0 w-full h-full object-cover" />
                     <div className='absolute w-screen h-200 bg-linear-to-t via-[#000000]/70 from-[#000000] to-transparent bottom-0 z-10' />
                 </section>
                 <section>
@@ -64,7 +57,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="lg:max-w-screen-2xl mx-auto relative z-10 pt-5 lg:pt-32 px-4">
+                <section className="lg:max-w-screen-2xl mx-auto relative z-10 pt-20 lg:pt-32 px-4">
                     <div className="mb-6">
                         <p className="helvetica-regular uppercase">Our Services</p>
                         <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-24 uppercase text-[#9EFF50]">What We Do</p>

@@ -4,7 +4,6 @@ import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 import LocomotiveScroll from 'locomotive-scroll'
 
-// import StudioImage from "../../assets/images/studio/Paza.webp"
 import StudioVideo from "../../assets/images/studio/Paza_Studio.mp4"
 import logo1 from "../../assets/logos/studio_logo/paza.png"
 import logo2 from "../../assets/logos/studio_logo/abh.png"
@@ -16,9 +15,9 @@ import BrayoImage3 from "../../assets/images/brayo/brayo-06.png"
 
 const AboutPage = () => {
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0)
-    // })
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
     useEffect(() => {
         const locomotive = new LocomotiveScroll()
@@ -62,13 +61,6 @@ const AboutPage = () => {
                                             <p className="helvetica-light flex items-start justify-start gap-2 lg:text-xl pt-2">
                                                 CEO, Director, Producer
                                             </p>
-                                            {/* <p className='uppercase helvetica-light pt-4 text-[#737373]'>Socials:</p>
-                                            <h3 className="uppercase text-4xl leading-7 pb-2">
-                                                <span className='hover:text-[#737373]'><a href="#">Instagram</a></span>, &nbsp;
-                                                <span className='hover:text-[#737373]'><a href="#">X (TWITTER)</a></span>, &nbsp;
-                                                <span className='hover:text-[#737373]'><a href="#">&nbsp;Facebook</a></span>, &nbsp;
-                                                <span className='hover:text-[#737373]'><a href="#">&nbsp;Tiktok</a></span>
-                                            </h3> */}
                                             <h3 className="uppercase text-6xl leading-20 pt-5 text-[#737373]">
                                                 "Persistant quest for zero deffect"
                                             </h3>

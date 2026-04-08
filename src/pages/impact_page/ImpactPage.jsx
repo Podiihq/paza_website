@@ -5,7 +5,6 @@ import PageTransition from "../../components/page_transition/PageTransition"
 import LocomotiveScroll from "locomotive-scroll"
 import SocialImage from "../../assets/images/other/social_Work.jpg"
 import { socialData } from "../../assets/data/social_data"
-import { BiArrowToRight } from "react-icons/bi"
 import { LuArrowBigRight } from "react-icons/lu"
 
 
