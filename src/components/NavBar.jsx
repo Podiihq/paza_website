@@ -133,28 +133,26 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className='fixed z-50 w-full lg:hidden'>
-                <div className='px-4 lg:px-0 flex justify-between items-center w-full'>
+            <div className='fixed z-50 w-full xl:hidden'>
+                <div className='px-4 xl:px-0 flex justify-between items-center w-full'>
                     <Link to="/">
                         <div className='flex items-center relative z-50'>
                             <div className='flex items-center gap-2 '>
                                 <img src={logo} alt="" className='w-10' />
-                                {/* <p className='text-[40px] leading-10  text-white hidden'>PAZA STUDIO</p> */}
                             </div>
                             <img src={abh_logo} alt="" className='h-16' />
                         </div>
                     </Link>
                     <HamburgerMenu />
                 </div>
-                <div className='absolute w-full h-30 bg-linear-to-b via-[#000000]/70 from-[#000000] to-transparent top-0 -z-10' />
+                <div className='absolute w-full h-30 lg:h-40 bg-linear-to-b via-[#000000]/70 from-[#000000] to-transparent top-0 -z-10' />
             </div>
-            <nav className='hidden lg:block w-screen py-2 fixed z-50'>
+            <nav className='hidden xl:block w-screen py-2 fixed z-50'>
                 <div className='flex justify-between items-center mx-auto max-w-screen-2xl px-4'>
                     <Link to="/">
                         <div className='flex items-center relative z-50'>
                             <div className='flex items-center gap-2 '>
                                 <img src={logo} alt="" className='w-10' />
-                                {/* <p className='text-[40px] leading-10  text-white'>PAZA STUDIO</p> */}
                             </div>
                             <img src={abh_logo} alt="" className='h-16' />
                         </div>

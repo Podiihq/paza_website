@@ -24,7 +24,7 @@ const ImpactPage = () => {
         <PageTransition>
             <div className="bg-[#000000] text-[#EFEFEB]">
                 <NavBar />
-                <section className='h-[70vh] relative  pt-32'>
+                <section className='h-screen lg:h-[70vh] relative  pt-32'>
                     <div className="lg:max-w-screen-2xl mx-auto flex flex-col h-full">
                         <div className="flex-1" />
                         <div className="relative px-4 z-20">

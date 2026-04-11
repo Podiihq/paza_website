@@ -15,7 +15,7 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
+                className="fixed inset-0 h-screen z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
                 onClick={onClose}
             >
                 <motion.div
@@ -25,19 +25,17 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 >
                     {/* Close Button */}
-                    <motion.button
-                        className="cursor-pointer absolute group top-5 right-5 lg:top-10 lg:right-10 z-20 py-2 px-2
+                    <motion.button className="cursor-pointer absolute group top-5 right-5 lg:top-10 lg:right-10 z-20 py-2 px-2
                                   bg-black hover:bg-[#9EFF50] hover:text-black border border-white hover:border-black flex items-center"
-                        onClick={onClose}
-                    >
+                        onClick={onClose}>
                         <IoMdClose className="text-4xl lg:text-5xl group-hover:rotate-90 duration-300" />
                         <p className="text-4xl lg:text-5xl pr-3">CLOSE</p>
                     </motion.button>
 
                     {/* Scroll Content */}
-                    <div className="h-full overflow-y-auto no-scrollbar">
+                    <div className="h-full no-scrollbar">
                         {/* Hero */}
-                        <motion.div className="relative w-full h-[80vh]">
+                        <motion.div className="relative w-full h-[75vh] lg:h-[80vh]">
                             <motion.img
                                 layoutId={`card-image-${selectedProject.title}`}
                                 src={selectedProject.poster}
@@ -62,9 +60,9 @@ const WorkDetailOverlay = ({ selectedProject, onClose }) => {
                         <div className="px-6 md:px-10">
                             <div>
                                 <h3 className="uppercase text-4xl lg:text-6xl tracking-wide text-[#939393] mb-2">Services / Our Role in the project</h3>
-                                <ul className="flex items-center gap-3 flex-wrap">
+                                <ul className="flex items-center gap-2 lg:gap-3 flex-wrap">
                                     {selectedProject.work.map((item, i) => (
-                                        <li key={i} className="uppercase helvetica-light px-4 py-2 border border-[#5a5a5a] rounded-full">
+                                        <li key={i} className="uppercase text-xs lg:text-base helvetica-light px-4 py-2 border border-[#5a5a5a] rounded-full">
                                             {item}
                                         </li>
                                     ))}

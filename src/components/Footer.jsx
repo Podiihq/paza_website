@@ -18,8 +18,8 @@ const Footer = () => {
     return (
         <div>
             <section className='overflow-hidden relative z-10 bg-black'>
-                <footer className='max-w-screen-2xl px-4 mx-auto flex flex-col lg:flex-row justify-between gap-5 relative z-10 pt-8 lg:pt-16 lg:pb-32 border-t-2 border-[#1a1a1a]'>
-                    <div className="flex flex-wrap lg:flex-nowrap justify-between items-start w-full gap-10 lg:gap-0">
+                <footer className='max-w-screen-2xl px-4 mx-auto flex flex-col flex-wrap xl:flex-row justify-between gap-5 relative z-10 pt-8 lg:pt-16 lg:pb-32 border-t-2 border-[#1a1a1a]'>
+                    <div className="flex flex-wrap justify-between items-start w-full gap-10 xl:gap-0">
                         <div className='flex flex-col h-full col-span-4'>
                             <h3 className="text-[40px] lg:text-[70px] uppercase text-[#9EFF50] underline">Contact us</h3>
                             <div className="mt-2 space-y-1 text-[24px] leading-none flex flex-col">

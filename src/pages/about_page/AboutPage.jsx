@@ -61,7 +61,7 @@ const AboutPage = () => {
                                             <p className="helvetica-light flex items-start justify-start gap-2 lg:text-xl pt-2">
                                                 CEO, Director, Producer
                                             </p>
-                                            <h3 className="uppercase text-6xl leading-20 pt-5 text-[#737373]">
+                                            <h3 className="uppercase text-center text-4xl lg:text-6xl leading-20 lg:pt-5 text-[#737373]">
                                                 "Persistant quest for zero deffect"
                                             </h3>
                                         </div>

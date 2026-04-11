@@ -25,7 +25,7 @@ const Card = ({ i, title, services, src, progress, range, targetScale }) => {
                 className="flex flex-col relative top-[25%] h-[30vh] lg:h-[80vh] rounded-lg origin-top w-full lg:border border-[#1A1A1A]">
                 <div className="h-full w-full relative flex flex-col ">
                     <div className='lg:flex-1' />
-                    <div className="relative z-20 lg:p-20 flex-col space-y-5 lg:w-2/3 p-4 hidden lg:block">
+                    <div className="relative z-20 lg:p-20 flex-col space-y-5 xl:w-2/3 p-4 hidden lg:block">
                         <div className='w-full'>
                             <h2 className='text-[40px] leading-11.25 lg:text-[170px] lg:leading-35.5 mb-4 uppercase'>{title}</h2>
                             {services?.map((item, index) => (
@@ -68,8 +68,8 @@ export const CardMobile = ({ services, title, src }) => {
         <div className='mb-4'>
             <div className='lg:hidden p-4 border lg:mx-4 border-[#1A1A1A] h-full'>
                 <div className='w-full'>
-                    <img src={src} alt="" className='w-full h-24 object-cover' />
-                    <h2 className='pt-2 text-[50px] leading-11.25 tracking-wide lg:text-[200px] lg:leading-37.5 mb-4 text-white uppercase'>{title}</h2>
+                    <img src={src} alt="" className='w-full h-24 md:h-50 object-cover' />
+                    <h2 className='pt-2 text-[50px] leading-11.25 tracking-wide md:text-[100px] md:leading-20 xl:text-[200px] xl:leading-37.5 mb-4 text-white uppercase'>{title}</h2>
                     {services?.map((item, index) => (
                         <p key={index} className='helvetica-light w-fit flex items-center gap-2 border-b border-[#222222] text-base py-0.5'>
                             <LuArrowBigRight className='text-xl' />

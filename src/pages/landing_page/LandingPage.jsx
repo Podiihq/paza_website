@@ -30,7 +30,7 @@ const LandingPage = () => {
                         <div className="flex-1" />
                         <div className="relative px-4 z-20 mb-10 lg:mb-20">
                             <p className="text-[100px] leading-20 lg:text-[230px] lg:leading-42.5 text-white uppercase">Bring your idea — <br className="hidden md:block" />we’ll handle the <br className="hidden md:block" />craft.</p>
-                            <div className="lg:absolute lg:bottom-5 lg:right-[45%] mt-4 lg:mt-0">
+                            <div className="lg:absolute lg:bottom-5 lg:left-[36%] xl:left-[32%] mt-4 lg:mt-0">
                                 <p className="lg:w-100 helvetica-light uppercase">We’re a hands-on <span className="text-[#9EFF50] helvetica-regular"> Audio-visual Production Studio </span>  that craft complete brand experiencesfrom initial concept to final delivery in any format.</p>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const LandingPage = () => {
                     <ServicesCards />
                     <DisplayMobileCard />
                 </section>
-                <section className="lg:max-w-screen-2xl mx-auto py-10 lg:py-32 lg:pt-0 px-4">
+                <section className="lg:max-w-screen-2xl mx-auto py-20 lg:py-32 px-4">
                     <p className="text-[80px] leading-18 lg:text-[150px] lg:leading-30 uppercase text-center">Your <span className="text-[#9EFF50]">vision,</span> our tools, <br className="hidden lg:block" /> one  <span className="text-[#9EFF50]">great result.</span></p>
                     <CurvedGallery />
                 </section>

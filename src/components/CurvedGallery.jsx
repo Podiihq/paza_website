@@ -1,11 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
-import Image1 from "../assets/images/backs/01.png"
-import Image2 from "../assets/images/backs/02.png"
-import Image3 from "../assets/images/backs/03.png"
-import Image4 from "../assets/images/backs/04.png"
-import Image5 from "../assets/images/backs/05.png"
 
 import Video1 from "../assets/videos/curved_videos/01.mp4"
 import Video2 from "../assets/videos/curved_videos/02.mp4"
@@ -18,12 +13,8 @@ import Video8 from "../assets/videos/curved_videos/08.mp4"
 import Video9 from "../assets/videos/curved_videos/09.mp4"
 
 
-const images = [
-    Image1, Image2, Image3, Image4, Image5,
-];
-
 const video_reel = [
-    Video1, Video3, Video9, Video4, Video2, Video7
+    Video1, Video3, Video9, Video2, Video7, Video5, Video8
 ];
 
 const CurvedGallery = () => {
