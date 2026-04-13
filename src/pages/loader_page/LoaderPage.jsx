@@ -3,6 +3,11 @@ import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import logo1 from "../../assets/logos/studio_logo/paza.png"
 import logo2 from "../../assets/logos/studio_logo/abh.png"
 import HeroImage from "../../assets/images/other/hero-loading.png"
+import Image1 from "../../assets/images/backs/02.png"
+import Image2 from "../../assets/images/backs/03.png"
+import Image3 from "../../assets/images/backs/04.png"
+import Image4 from "../../assets/images/backs/05.png"
+import Image5 from "../../assets/images/backs/01.png"
 
 const LoaderPage = ({ onComplete }) => {
     const progress = useMotionValue(0);
@@ -15,7 +20,7 @@ const LoaderPage = ({ onComplete }) => {
     const assets = [
         logo1,
         logo2,
-        HeroImage
+        HeroImage, Image1, Image2, Image3, Image4, Image5
         // add more images here
     ];
 
