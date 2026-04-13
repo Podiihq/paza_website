@@ -51,6 +51,35 @@ export const HamburgerMenu = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label={isOpen ? "Close menu" : "Open menu"}
             >
+                <div className={`lg:pl-1 lg:pb-3 lg:pr-1 lg:pt-1 lg:hover:pb-6 lg:hover:pl-3 duration-300 rounded ${isOpen ? "bg-[#000000]" : ""}`}>
+                    <motion.svg
+                        className="w-16 h-16 lg:w-32 lg:h-32"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                    >
+                        <motion.path
+                            d="M4 8H20"
+                            variants={topLineVariants}
+                            animate={isOpen ? "open" : "closed"}
+                            transition={{ type: 'tween' }}
+                        />
+                        <motion.path
+                            d="M4 12H20"
+                            variants={bottomLineVariants}
+                            animate={isOpen ? "open" : "closed"}
+                            transition={{ type: 'tween' }}
+                        />
+                    </motion.svg>
+                </div>
+
+            </button>
+            {/* <button
+                className={`pt-4 focus:outline-none relative z-30 ${isOpen ? "text-[#9EFF50]" : "text-[#9EFF50]"}`}
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Close menu" : "Open menu"}
+            >
                 <div className={`lg:pl-1 lg:pb-3 lg:pr-1 lg:pt-1 lg:hover:pb-6 lg:hover:pl-3 duration-300 rounded ${isOpen ? "" : ""}`}>
                     <motion.svg
                         className="w-16 h-16 lg:w-32 lg:h-32 rounded"
@@ -73,8 +102,7 @@ export const HamburgerMenu = () => {
                         />
                     </motion.svg>
                 </div>
-
-            </button>
+            </button> */}
 
             <AnimatePresence>
                 {isOpen && (
