@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router';
 import { FlipLink } from './LinkFlip';
@@ -51,35 +51,6 @@ export const HamburgerMenu = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-                <div className={`lg:pl-1 lg:pb-3 lg:pr-1 lg:pt-1 lg:hover:pb-6 lg:hover:pl-3 duration-300 rounded ${isOpen ? "bg-[#000000]" : ""}`}>
-                    <motion.svg
-                        className="w-16 h-16 lg:w-32 lg:h-32"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                    >
-                        <motion.path
-                            d="M4 8H20"
-                            variants={topLineVariants}
-                            animate={isOpen ? "open" : "closed"}
-                            transition={{ type: 'tween' }}
-                        />
-                        <motion.path
-                            d="M4 12H20"
-                            variants={bottomLineVariants}
-                            animate={isOpen ? "open" : "closed"}
-                            transition={{ type: 'tween' }}
-                        />
-                    </motion.svg>
-                </div>
-
-            </button>
-            {/* <button
-                className={`pt-4 focus:outline-none relative z-30 ${isOpen ? "text-[#9EFF50]" : "text-[#9EFF50]"}`}
-                onClick={() => setIsOpen(!isOpen)}
-                aria-label={isOpen ? "Close menu" : "Open menu"}
-            >
                 <div className={`lg:pl-1 lg:pb-3 lg:pr-1 lg:pt-1 lg:hover:pb-6 lg:hover:pl-3 duration-300 rounded ${isOpen ? "" : ""}`}>
                     <motion.svg
                         className="w-16 h-16 lg:w-32 lg:h-32 rounded"
@@ -102,7 +73,7 @@ export const HamburgerMenu = () => {
                         />
                     </motion.svg>
                 </div>
-            </button> */}
+            </button>
 
             <AnimatePresence>
                 {isOpen && (
@@ -166,9 +137,9 @@ const NavBar = () => {
                     <Link to="/">
                         <div className='flex items-center relative z-50'>
                             <div className='flex items-center gap-2 '>
-                                <img src={logo} alt="" className='w-10' />
+                                <img src={logo} alt="" className='w-8 lg:w-10' />
                             </div>
-                            <img src={abh_logo} alt="" className='h-16' />
+                            <img src={abh_logo} alt="" className='h-10 lg:h-16' />
                         </div>
                     </Link>
                     <HamburgerMenu />
@@ -180,9 +151,9 @@ const NavBar = () => {
                     <Link to="/">
                         <div className='flex items-center relative z-50'>
                             <div className='flex items-center gap-2 '>
-                                <img src={logo} alt="" className='w-10' />
+                                <img src={logo} alt="" className='w-8 lg:w-10' />
                             </div>
-                            <img src={abh_logo} alt="" className='h-16' />
+                            <img src={abh_logo} alt="" className='h-10 lg:h-16' />
                         </div>
                     </Link>
                     <div className='lg:flex items-center gap-6 uppercase'>
