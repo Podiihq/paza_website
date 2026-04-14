@@ -9,7 +9,6 @@ import logo1 from "../../assets/logos/studio_logo/paza.png"
 import logo2 from "../../assets/logos/studio_logo/abh.png"
 import logo3 from "../../assets/logos/studio_logo/DOLBY_logo.png"
 
-import BrayoImage1 from "../../assets/images/brayo/brayo-05.png"
 import BrayoImage2 from "../../assets/images/brayo/brayo-4.png"
 import BrayoImage3 from "../../assets/images/brayo/brayo-06.png"
 
