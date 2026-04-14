@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
+import PlaceholderImage from "../assets/images/placeholder.png"
 
 
 import Video1 from "../assets/videos/curved_videos/01.mp4"
@@ -24,10 +25,11 @@ const CurvedGallery = () => {
                 <Marquee speed={10}>
                     {
                         video_reel.map((item, index) => (
-                            <div className="relative w-full h-full">
-                                <video autoPlay loop muted className='w-100 h-150 object-cover' >
+                            <div className="w-full h-full">
+                                <video autoPlay loop muted className='w-100 h-150 object-cover'>
                                     <source key={index} src={item} type="video/mp4" />
                                 </video>
+                                <img src={PlaceholderImage} alt="" className='h-150 absolute -z-10 w-full top-0 object-cover' />
                             </div>
                         ))
                     }

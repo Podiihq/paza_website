@@ -8,6 +8,7 @@ import Image2 from "../../assets/images/backs/03.png"
 import Image3 from "../../assets/images/backs/04.png"
 import Image4 from "../../assets/images/backs/05.png"
 import Image5 from "../../assets/images/backs/01.png"
+import PalaceholderImage from "../../assets/images/placeholder.png"
 
 const LoaderPage = ({ onComplete }) => {
     const progress = useMotionValue(0);
@@ -20,8 +21,7 @@ const LoaderPage = ({ onComplete }) => {
     const assets = [
         logo1,
         logo2,
-        HeroImage, Image1, Image2, Image3, Image4, Image5
-        // add more images here
+        HeroImage, Image1, Image2, Image3, Image4, Image5, PalaceholderImage
     ];
 
     // 🔄 Asset Loader
