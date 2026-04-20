@@ -6,9 +6,7 @@ import PlaceholderImage from "../assets/images/placeholder.png"
 import Video1 from "../assets/videos/curved_videos/01.mp4"
 import Video2 from "../assets/videos/curved_videos/02.mp4"
 import Video3 from "../assets/videos/curved_videos/03.mp4"
-import Video4 from "../assets/videos/curved_videos/04.mp4"
 import Video5 from "../assets/videos/curved_videos/05.mp4"
-import Video6 from "../assets/videos/curved_videos/06.mp4"
 import Video7 from "../assets/videos/curved_videos/07.mp4"
 import Video8 from "../assets/videos/curved_videos/08.mp4"
 import Video9 from "../assets/videos/curved_videos/09.mp4"
@@ -46,7 +44,6 @@ const video_reel = [
 ];
 
 const CurvedGallery = () => {
-    const [loaded, setLoaded] = useState(false);
     return (
         <div>
             <div className="image-row lg:flex justify-center w-full h-140 object-cover hidden relative">
