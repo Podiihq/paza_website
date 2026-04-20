@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Marquee from 'react-fast-marquee';
 import PlaceholderImage from "../assets/images/placeholder.png"
 
@@ -15,21 +15,51 @@ import Video9 from "../assets/videos/curved_videos/09.mp4"
 
 
 const video_reel = [
-    Video1, Video3, Video9, Video2, Video7, Video5, Video8
+    {
+        reel_video: Video1,
+        reel_placeholder: PlaceholderImage
+    },
+    {
+        reel_video: Video3,
+        reel_placeholder: PlaceholderImage
+    },
+    {
+        reel_video: Video9,
+        reel_placeholder: PlaceholderImage
+    },
+    {
+        reel_video: Video2,
+        reel_placeholder: PlaceholderImage
+    },
+    {
+        reel_video: Video7,
+        reel_placeholder: PlaceholderImage
+    },
+    {
+        reel_video: Video5,
+        reel_placeholder: PlaceholderImage
+    },
+    {
+        reel_video: Video8,
+        reel_placeholder: PlaceholderImage
+    },
 ];
 
 const CurvedGallery = () => {
+    const [loaded, setLoaded] = useState(false);
     return (
         <div>
             <div className="image-row lg:flex justify-center w-full h-140 object-cover hidden relative">
                 <Marquee speed={10}>
                     {
                         video_reel.map((item, index) => (
-                            <div className="w-full h-full">
+                            <div className="w-100 h-full">
                                 <video autoPlay loop muted className='w-100 h-150 object-cover'>
-                                    <source key={index} src={item} type="video/mp4" />
+                                    <source key={index} src={item.reel_video} type="video/mp4" />
                                 </video>
-                                <img src={PlaceholderImage} alt="" className='h-150 absolute -z-10 w-full top-0 object-cover' />
+                                <div key={index} className='absolute top-0 -z-10'>
+                                    <img src={item.reel_placeholder} alt="" className='h-150 w-100 object-cover border-r border-[#000000]' />
+                                </div>
                             </div>
                         ))
                     }
