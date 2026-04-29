@@ -8,6 +8,7 @@ import Image9 from "../../assets/images/shows/ibura.jpg"
 import Image10 from "../../assets/images/shows/lumumba_explains_podcast.jpg"
 import Image11 from "../../assets/images/shows/Shanga.png"
 import Image12 from "../../assets/images/shows/nilichoma.webp"
+import Image13 from "../../assets/images/shows/kina.jpeg"
 
 import ImagePlaceholder from "../../assets/images/placeholder.png"
 
@@ -24,6 +25,17 @@ export const workData = [
         platform: "MMP and Showmax"
     },
     {
+        poster: Image13,
+        title: "Kina",
+        link_to: "#",
+        work: [
+            "Final Mix",
+            "Sound Design",
+            "Music"
+        ],
+        platform: "MMP and Showmax"
+    },
+    {
         poster: Image4,
         title: "Salem",
         link_to: "#",
@@ -32,7 +44,6 @@ export const workData = [
             "Final Mix",
             "Sound Design",
             "Color Grading"
-
         ],
         platform: "MMP and Showmax"
     },
