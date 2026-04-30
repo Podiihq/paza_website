@@ -54,8 +54,8 @@ const ImpactPage = () => {
                 <section className="lg:max-w-screen-2xl mx-auto pt-20 lg:pt-0 pb-20">
                     <div>
                         <div className="flex flex-col justify-center items-center my-10 lg:my-20 px-4 space-y-4">
-                            <p className="uppercase text-6xl leading-14 lg:leading-20 lg:text-8xl text-center lg:w-1/2">Public Health Campaigns in Kenya: A Musical and Broadcast Legacy</p>
-                            <p className="helvetica-light lg:w-1/2 text-center lg:text-lg italic">These theme songs, radio dramas, and radio spots were produced to support public health communication across Kenya, working in partnership with national government ministries, UN agencies, international NGOs, and community-based organizations. Each campaign reached millions of Kenyans through radio, television, public events, and community mobilization.</p>
+                            <p className="uppercase text-6xl leading-14 lg:leading-20 lg:text-8xl lg:w-1/2">Public Health Campaigns in Kenya: A Musical and Broadcast Legacy</p>
+                            <p className="helvetica-light lg:w-1/2 lg:text-lg">These theme songs, radio dramas, and radio spots were produced to support public health communication across Kenya, working in partnership with national government ministries, UN agencies, international NGOs, and community-based organizations. Each campaign reached millions of Kenyans through radio, television, public events, and community mobilization.</p>
                         </div>
                         <SocialCampaigns data={socialData} />
                     </div>
