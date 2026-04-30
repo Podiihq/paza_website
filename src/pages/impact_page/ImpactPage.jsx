@@ -51,7 +51,6 @@ const ImpactPage = () => {
                     <img src={SocialImage} alt="" className="absolute top-0 w-full h-full object-cover z-10" />
                     <div className='absolute w-screen h-200 bg-linear-to-t via-[#000000]/70 from-[#000000] to-transparent bottom-0 z-10' />
                 </section>
-
                 <section className="lg:max-w-screen-2xl mx-auto pt-20 lg:pt-0 pb-20">
                     <div>
                         <div className="flex flex-col justify-center items-center my-10 lg:my-20 px-4 space-y-4">
